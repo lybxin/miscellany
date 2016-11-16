@@ -1,0 +1,1 @@
+cmd_/home/lybxin/MyRes/miscellany/test/05_modules/hello.ko := ld -r -m elf_x86_64 -T /home/lybxin/MyRes/linux-source-4.4.0/scripts/module-common.lds --build-id  -o /home/lybxin/MyRes/miscellany/test/05_modules/hello.ko /home/lybxin/MyRes/miscellany/test/05_modules/hello.o /home/lybxin/MyRes/miscellany/test/05_modules/hello.mod.o

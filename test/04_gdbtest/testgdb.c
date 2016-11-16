@@ -16,7 +16,7 @@ int test1(long p)
     
     printf("[test1]val:%ld,p:%ld \n",val,p);
     //printf("[test1]invalid *p:%ld \n",*((long*)p) );
-    sleep(10);
+    sleep(10000);
     printf("sleep end \n");
     g_off++;
     
