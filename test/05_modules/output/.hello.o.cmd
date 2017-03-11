@@ -1,0 +1,1 @@
+cmd_/home/lybxin/MyRes/miscellany/test/05_modules/output/hello.o := ld -m elf_x86_64   -r -o /home/lybxin/MyRes/miscellany/test/05_modules/output/hello.o /home/lybxin/MyRes/miscellany/test/05_modules/output/../src/hellomod.o /home/lybxin/MyRes/miscellany/test/05_modules/output/../src/helloprintf.o 

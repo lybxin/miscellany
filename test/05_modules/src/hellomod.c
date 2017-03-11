@@ -17,24 +17,23 @@
 #include <linux/init.h>  
 #include <linux/module.h> 
 #include "include/helloprintf.h"
- 
-MODULE_LICENSE("GPL"); 
+  
 MODULE_AUTHOR("lybxin~~");
-MODULE_DESCRIPTION("TCP hello snooper");
+MODULE_DESCRIPTION("modules test：hello");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("1.1");
 
 
 static int port __read_mostly;
 MODULE_PARM_DESC(port, "Port to match (0=all)");
-module_param(port, int, 0);
+module_param(port, int, 0644);
 
 
 //extern int sysctl_tcp_discard_on_port;
 
 static __init  int hello_init(void)  
 {  
-    printk(KERN_ALERT "[hello_init]再次修改\n");  
+    printk(KERN_ALERT "[hello_init]修改验证\n");  
     initprintf();  
     pr_info("[hello_init]test port:%d\n",port);
     //ergsdf

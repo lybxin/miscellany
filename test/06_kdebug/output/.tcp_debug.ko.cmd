@@ -1,0 +1,1 @@
+cmd_/home/lybxin/MyRes/miscellany/test/06_kdebug/output/tcp_debug.ko := ld -r -m elf_x86_64 -T /home/lybxin/MyRes/linux-source-4.4.0/scripts/module-common.lds --build-id  -o /home/lybxin/MyRes/miscellany/test/06_kdebug/output/tcp_debug.ko /home/lybxin/MyRes/miscellany/test/06_kdebug/output/tcp_debug.o /home/lybxin/MyRes/miscellany/test/06_kdebug/output/tcp_debug.mod.o

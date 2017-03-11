@@ -1,0 +1,2055 @@
+13708 execve("/usr/bin/gcc", ["gcc", "-E", "vatest.c"], [/* 61 vars */]) = 0
+13708 brk(NULL)                         = 0x197f000
+13708 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+13708 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc9996ff000
+13708 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+13708 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+13708 fstat(3, {st_mode=S_IFREG|0644, st_size=108304, ...}) = 0
+13708 mmap(NULL, 108304, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fc9996e4000
+13708 close(3)                          = 0
+13708 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+13708 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+13708 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+13708 fstat(3, {st_mode=S_IFREG|0755, st_size=1864888, ...}) = 0
+13708 mmap(NULL, 3967392, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc999113000
+13708 mprotect(0x7fc9992d2000, 2097152, PROT_NONE) = 0
+13708 mmap(0x7fc9994d2000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bf000) = 0x7fc9994d2000
+13708 mmap(0x7fc9994d8000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fc9994d8000
+13708 close(3)                          = 0
+13708 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc9996e3000
+13708 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc9996e1000
+13708 arch_prctl(ARCH_SET_FS, 0x7fc9996e1740) = 0
+13708 mprotect(0x7fc9994d2000, 16384, PROT_READ) = 0
+13708 mprotect(0x6dc000, 8192, PROT_READ) = 0
+13708 mprotect(0x7fc999701000, 4096, PROT_READ) = 0
+13708 munmap(0x7fc9996e4000, 108304)    = 0
+13708 brk(NULL)                         = 0x197f000
+13708 brk(0x19b1000)                    = 0x19b1000
+13708 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+13708 fstat(3, {st_mode=S_IFREG|0644, st_size=4763056, ...}) = 0
+13708 mmap(NULL, 4763056, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fc998c88000
+13708 close(3)                          = 0
+13708 open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+13708 fstat(3, {st_mode=S_IFREG|0644, st_size=2995, ...}) = 0
+13708 read(3, "# Locale name alias data base.\n#"..., 4096) = 2995
+13708 read(3, "", 4096)                 = 0
+13708 close(3)                          = 0
+13708 open("/usr/share/locale/zh_CN/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+13708 open("/usr/share/locale/zh/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+13708 open("/usr/share/locale-langpack/zh_CN/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+13708 open("/usr/share/locale-langpack/zh/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+13708 ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+13708 ioctl(0, TIOCGWINSZ, {ws_row=43, ws_col=150, ws_xpixel=0, ws_ypixel=0}) = 0
+13708 ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+13708 rt_sigaction(SIGINT, {SIG_IGN, [INT], SA_RESTORER|SA_RESTART, 0x7fc9991484b0}, {SIG_DFL, [], 0}, 8) = 0
+13708 rt_sigaction(SIGINT, {0x40adda, [INT], SA_RESTORER|SA_RESTART, 0x7fc9991484b0}, {SIG_IGN, [INT], SA_RESTORER|SA_RESTART, 0x7fc9991484b0}, 8) = 0
+13708 rt_sigaction(SIGHUP, {SIG_IGN, [HUP], SA_RESTORER|SA_RESTART, 0x7fc9991484b0}, {SIG_DFL, [], 0}, 8) = 0
+13708 rt_sigaction(SIGHUP, {0x40adda, [HUP], SA_RESTORER|SA_RESTART, 0x7fc9991484b0}, {SIG_IGN, [HUP], SA_RESTORER|SA_RESTART, 0x7fc9991484b0}, 8) = 0
+13708 rt_sigaction(SIGTERM, {SIG_IGN, [TERM], SA_RESTORER|SA_RESTART, 0x7fc9991484b0}, {SIG_DFL, [], 0}, 8) = 0
+13708 rt_sigaction(SIGTERM, {0x40adda, [TERM], SA_RESTORER|SA_RESTART, 0x7fc9991484b0}, {SIG_IGN, [TERM], SA_RESTORER|SA_RESTART, 0x7fc9991484b0}, 8) = 0
+13708 rt_sigaction(SIGPIPE, {SIG_IGN, [PIPE], SA_RESTORER|SA_RESTART, 0x7fc9991484b0}, {SIG_DFL, [], 0}, 8) = 0
+13708 rt_sigaction(SIGPIPE, {0x40adda, [PIPE], SA_RESTORER|SA_RESTART, 0x7fc9991484b0}, {SIG_IGN, [PIPE], SA_RESTORER|SA_RESTART, 0x7fc9991484b0}, 8) = 0
+13708 rt_sigaction(SIGCHLD, {SIG_DFL, [CHLD], SA_RESTORER|SA_RESTART, 0x7fc9991484b0}, {SIG_DFL, [], 0}, 8) = 0
+13708 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+13708 setrlimit(RLIMIT_STACK, {rlim_cur=65536*1024, rlim_max=RLIM64_INFINITY}) = 0
+13708 access("/usr/local/sbin/gcc", X_OK) = -1 ENOENT (No such file or directory)
+13708 access("/usr/local/bin/gcc", X_OK) = -1 ENOENT (No such file or directory)
+13708 access("/usr/sbin/gcc", X_OK)     = -1 ENOENT (No such file or directory)
+13708 access("/usr/bin/gcc", X_OK)      = 0
+13708 stat("/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=915736, ...}) = 0
+13708 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13708 lstat("/usr/bin", {st_mode=S_IFDIR|0755, st_size=69632, ...}) = 0
+13708 lstat("/usr/bin/gcc", {st_mode=S_IFLNK|0777, st_size=5, ...}) = 0
+13708 readlink("/usr/bin/gcc", "gcc-5", 4095) = 5
+13708 lstat("/usr/bin/gcc-5", {st_mode=S_IFREG|0755, st_size=915736, ...}) = 0
+13708 access("/usr/local/sbin/gcc", X_OK) = -1 ENOENT (No such file or directory)
+13708 access("/usr/local/bin/gcc", X_OK) = -1 ENOENT (No such file or directory)
+13708 access("/usr/sbin/gcc", X_OK)     = -1 ENOENT (No such file or directory)
+13708 access("/usr/bin/gcc", X_OK)      = 0
+13708 stat("/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=915736, ...}) = 0
+13708 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13708 lstat("/usr/bin", {st_mode=S_IFDIR|0755, st_size=69632, ...}) = 0
+13708 lstat("/usr/bin/gcc", {st_mode=S_IFLNK|0777, st_size=5, ...}) = 0
+13708 readlink("/usr/bin/gcc", "gcc-5", 4095) = 5
+13708 lstat("/usr/bin/gcc-5", {st_mode=S_IFREG|0755, st_size=915736, ...}) = 0
+13708 access("vatest.c", F_OK)          = 0
+13708 access("/usr/lib/gcc/x86_64-linux-gnu/5/", X_OK) = 0
+13708 access("/usr/lib/gcc/x86_64-linux-gnu/5/", X_OK) = 0
+13708 access("/usr/lib/gcc/x86_64-linux-gnu/5/specs", R_OK) = -1 ENOENT (No such file or directory)
+13708 access("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/5/specs", R_OK) = -1 ENOENT (No such file or directory)
+13708 access("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/specs", R_OK) = -1 ENOENT (No such file or directory)
+13708 access("/usr/lib/gcc/x86_64-linux-gnu/specs", R_OK) = -1 ENOENT (No such file or directory)
+13708 access("/usr/lib/gcc/x86_64-linux-gnu/5/", X_OK) = 0
+13708 stat("/usr/lib/gcc/x86_64-linux-gnu/5/cc1", {st_mode=S_IFREG|0755, st_size=20863160, ...}) = 0
+13708 access("/usr/lib/gcc/x86_64-linux-gnu/5/cc1", X_OK) = 0
+13708 vfork( <unfinished ...>
+13710 execve("/usr/lib/gcc/x86_64-linux-gnu/5/cc1", ["/usr/lib/gcc/x86_64-linux-gnu/5/"..., "-E", "-quiet", "-imultiarch", "x86_64-linux-gnu", "vatest.c", "-mtune=generic", "-march=x86-64", "-fstack-protector-strong", "-Wformat", "-Wformat-security"], [/* 63 vars */] <unfinished ...>
+13708 <... vfork resumed> )             = 13710
+13708 wait4(13710,  <unfinished ...>
+13710 <... execve resumed> )            = 0
+13710 brk(NULL)                         = 0x3654000
+13710 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+13710 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd1c9946000
+13710 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+13710 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=108304, ...}) = 0
+13710 mmap(NULL, 108304, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fd1c992b000
+13710 close(3)                          = 0
+13710 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/x86_64-linux-gnu/libisl.so.15", O_RDONLY|O_CLOEXEC) = 3
+13710 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\262\3\0\0\0\0\0"..., 832) = 832
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=1551360, ...}) = 0
+13710 mmap(NULL, 3646456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd1c93a8000
+13710 mprotect(0x7fd1c9521000, 2093056, PROT_NONE) = 0
+13710 mmap(0x7fd1c9720000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x178000) = 0x7fd1c9720000
+13710 close(3)                          = 0
+13710 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/x86_64-linux-gnu/libmpc.so.3", O_RDONLY|O_CLOEXEC) = 3
+13710 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220D\0\0\0\0\0\0"..., 832) = 832
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=97280, ...}) = 0
+13710 mmap(NULL, 2192520, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd1c9190000
+13710 mprotect(0x7fd1c91a7000, 2093056, PROT_NONE) = 0
+13710 mmap(0x7fd1c93a6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7fd1c93a6000
+13710 close(3)                          = 0
+13710 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/x86_64-linux-gnu/libmpfr.so.4", O_RDONLY|O_CLOEXEC) = 3
+13710 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\217\0\0\0\0\0\0"..., 832) = 832
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=412624, ...}) = 0
+13710 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd1c992a000
+13710 mmap(NULL, 2507616, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd1c8f2b000
+13710 mprotect(0x7fd1c8f8e000, 2093056, PROT_NONE) = 0
+13710 mmap(0x7fd1c918d000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x62000) = 0x7fd1c918d000
+13710 close(3)                          = 0
+13710 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/x86_64-linux-gnu/libgmp.so.10", O_RDONLY|O_CLOEXEC) = 3
+13710 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\223\0\0\0\0\0\0"..., 832) = 832
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=522664, ...}) = 0
+13710 mmap(NULL, 2617792, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd1c8cab000
+13710 mprotect(0x7fd1c8d2a000, 2093056, PROT_NONE) = 0
+13710 mmap(0x7fd1c8f29000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7e000) = 0x7fd1c8f29000
+13710 close(3)                          = 0
+13710 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+13710 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+13710 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\r\0\0\0\0\0\0"..., 832) = 832
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=14608, ...}) = 0
+13710 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd1c8aa7000
+13710 mprotect(0x7fd1c8aaa000, 2093056, PROT_NONE) = 0
+13710 mmap(0x7fd1c8ca9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fd1c8ca9000
+13710 close(3)                          = 0
+13710 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+13710 open("/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+13710 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360\35\0\0\0\0\0\0"..., 832) = 832
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=104824, ...}) = 0
+13710 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd1c9929000
+13710 mmap(NULL, 2199880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd1c888d000
+13710 mprotect(0x7fd1c88a6000, 2093056, PROT_NONE) = 0
+13710 mmap(0x7fd1c8aa5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7fd1c8aa5000
+13710 close(3)                          = 0
+13710 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+13710 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+13710 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0V\0\0\0\0\0\0"..., 832) = 832
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=1088952, ...}) = 0
+13710 mmap(NULL, 3178744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd1c8584000
+13710 mprotect(0x7fd1c868c000, 2093056, PROT_NONE) = 0
+13710 mmap(0x7fd1c888b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x107000) = 0x7fd1c888b000
+13710 close(3)                          = 0
+13710 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+13710 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+13710 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+13710 fstat(3, {st_mode=S_IFREG|0755, st_size=1864888, ...}) = 0
+13710 mmap(NULL, 3967392, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd1c81bb000
+13710 mprotect(0x7fd1c837a000, 2097152, PROT_NONE) = 0
+13710 mmap(0x7fd1c857a000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bf000) = 0x7fd1c857a000
+13710 mmap(0x7fd1c8580000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fd1c8580000
+13710 close(3)                          = 0
+13710 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd1c9928000
+13710 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd1c9927000
+13710 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd1c9925000
+13710 arch_prctl(ARCH_SET_FS, 0x7fd1c9925840) = 0
+13710 mprotect(0x7fd1c857a000, 16384, PROT_READ) = 0
+13710 mprotect(0x7fd1c888b000, 4096, PROT_READ) = 0
+13710 mprotect(0x7fd1c8aa5000, 4096, PROT_READ) = 0
+13710 mprotect(0x7fd1c8ca9000, 4096, PROT_READ) = 0
+13710 mprotect(0x7fd1c8f29000, 4096, PROT_READ) = 0
+13710 mprotect(0x7fd1c918d000, 8192, PROT_READ) = 0
+13710 mprotect(0x7fd1c93a6000, 4096, PROT_READ) = 0
+13710 mprotect(0x7fd1c9720000, 4096, PROT_READ) = 0
+13710 mprotect(0x19d4000, 24576, PROT_READ) = 0
+13710 mprotect(0x7fd1c9948000, 4096, PROT_READ) = 0
+13710 munmap(0x7fd1c992b000, 108304)    = 0
+13710 brk(NULL)                         = 0x3654000
+13710 brk(0x3686000)                    = 0x3686000
+13710 getrlimit(RLIMIT_STACK, {rlim_cur=65536*1024, rlim_max=RLIM64_INFINITY}) = 0
+13710 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=4763056, ...}) = 0
+13710 mmap(NULL, 4763056, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fd1c7d30000
+13710 close(3)                          = 0
+13710 open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=2995, ...}) = 0
+13710 read(3, "# Locale name alias data base.\n#"..., 4096) = 2995
+13710 read(3, "", 4096)                 = 0
+13710 close(3)                          = 0
+13710 open("/usr/share/locale/zh_CN/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+13710 open("/usr/share/locale/zh/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+13710 open("/usr/share/locale-langpack/zh_CN/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+13710 open("/usr/share/locale-langpack/zh/LC_MESSAGES/gcc-5.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+13710 ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+13710 ioctl(0, TIOCGWINSZ, {ws_row=43, ws_col=150, ws_xpixel=0, ws_ypixel=0}) = 0
+13710 rt_sigaction(SIGSEGV, {0x7d6830, [SEGV], SA_RESTORER|SA_RESTART, 0x7fd1c81f04b0}, {SIG_DFL, [], 0}, 8) = 0
+13710 rt_sigaction(SIGILL, {0x7d6830, [ILL], SA_RESTORER|SA_RESTART, 0x7fd1c81f04b0}, {SIG_DFL, [], 0}, 8) = 0
+13710 rt_sigaction(SIGBUS, {0x7d6830, [BUS], SA_RESTORER|SA_RESTART, 0x7fd1c81f04b0}, {SIG_DFL, [], 0}, 8) = 0
+13710 rt_sigaction(SIGABRT, {0x7d6830, [ABRT], SA_RESTORER|SA_RESTART, 0x7fd1c81f04b0}, {SIG_DFL, [], 0}, 8) = 0
+13710 rt_sigaction(SIGFPE, {0x7d6830, [FPE], SA_RESTORER|SA_RESTART, 0x7fd1c81f04b0}, {SIG_DFL, [], 0}, 8) = 0
+13710 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd1c9945000
+13710 mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd1c9904000
+13710 mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd1c7b30000
+13710 brk(0x36a8000)                    = 0x36a8000
+13710 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd1c9943000
+13710 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd1c9941000
+13710 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd1c993f000
+13710 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd1c993b000
+13710 sysinfo({uptime=15933, loads=[64032, 76224, 72416], totalram=3867897856, freeram=120344576, sharedram=81551360, bufferram=91557888, totalswap=1998581760, freeswap=1995399168, procs=711, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+13710 getrlimit(RLIMIT_AS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+13710 sysinfo({uptime=15933, loads=[64032, 76224, 72416], totalram=3867897856, freeram=120344576, sharedram=81551360, bufferram=91557888, totalswap=1998581760, freeswap=1995399168, procs=711, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+13710 getrlimit(RLIMIT_AS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+13710 getrlimit(RLIMIT_RSS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+13710 sysinfo({uptime=15933, loads=[64032, 76224, 72416], totalram=3867897856, freeram=120344576, sharedram=81551360, bufferram=91557888, totalswap=1998581760, freeswap=1995399168, procs=711, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+13710 getrlimit(RLIMIT_AS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+13710 brk(0x36cd000)                    = 0x36cd000
+13710 ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+13710 open("/dev/urandom", O_RDONLY)    = 3
+13710 read(3, "\351*\245\273bv\22v", 8) = 8
+13710 close(3)                          = 0
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include/x86_64-linux-gnu", 0x7fff48324440) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 access("/usr/lib/gcc/x86_64-linux-gnu/5/", X_OK) = 0
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/x86_64-linux-gnu", 0x7fff48324440) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 stat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 stat("/usr/local/include/x86_64-linux-gnu", 0x7fff48325450) = -1 ENOENT (No such file or directory)
+13710 stat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 stat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/include", 0x7fff48325450) = -1 ENOENT (No such file or directory)
+13710 stat("/usr/include/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 stat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 open("vatest.c", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0664, st_size=1398, ...}) = 0
+13710 read(3, "#include <stdio.h>  \n#include <s"..., 1398) = 1398
+13710 close(3)                          = 0
+13710 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd1c9937000
+13710 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 6), ...}) = 0
+13710 write(1, "# 1 \"vatest.c\"\n", 15) = 15
+13710 write(1, "# 1 \"<built-in>\"\n", 17) = 17
+13710 write(1, "# 1 \"<command-line>\"\n", 21) = 21
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include/stdc-predef.h", 0x7fff48324350) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/stdc-predef.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include/stdc-predef.h", 0x7fff48324350) = -1 ENOENT (No such file or directory)
+13710 open("/usr/local/include/stdc-predef.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/stdc-predef.h", 0x7fff48324350) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/stdc-predef.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/stdc-predef.h", 0x7fff48324350) = -1 ENOENT (No such file or directory)
+13710 open("/usr/include/x86_64-linux-gnu/stdc-predef.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/stdc-predef.h", {st_mode=S_IFREG|0644, st_size=2229, ...}) = 0
+13710 open("/usr/include/stdc-predef.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=2229, ...}) = 0
+13710 read(3, "/* Copyright (C) 1991-2016 Free "..., 2229) = 2229
+13710 close(3)                          = 0
+13710 write(1, "# 1 \"/usr/include/stdc-predef.h\""..., 39) = 39
+13710 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd1c9933000
+13710 write(1, "# 1 \"<command-line>\" 2\n", 23) = 23
+13710 write(1, "# 1 \"vatest.c\"\n", 15) = 15
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include/stdio.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/stdio.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include/stdio.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/local/include/stdio.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/stdio.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/stdio.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/stdio.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/include/x86_64-linux-gnu/stdio.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/stdio.h", {st_mode=S_IFREG|0644, st_size=31365, ...}) = 0
+13710 open("/usr/include/stdio.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=31365, ...}) = 0
+13710 read(3, "/* Define ISO C stdio on top of "..., 31365) = 31365
+13710 close(3)                          = 0
+13710 write(1, "# 1 \"/usr/include/stdio.h\" 1 3 4"..., 33) = 33
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include/features.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/features.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include/features.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/local/include/features.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/features.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/features.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/features.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/include/x86_64-linux-gnu/features.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/features.h", {st_mode=S_IFREG|0644, st_size=13214, ...}) = 0
+13710 open("/usr/include/features.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=13214, ...}) = 0
+13710 read(3, "/* Copyright (C) 1991-2016 Free "..., 13214) = 13214
+13710 close(3)                          = 0
+13710 write(1, "# 27 \"/usr/include/stdio.h\" 3 4\n", 32) = 32
+13710 write(1, "# 1 \"/usr/include/features.h\" 1 "..., 36) = 36
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include/sys", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/sys/cdefs.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include/sys", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/local/include/sys/cdefs.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/sys", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/sys/cdefs.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/sys", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/sys/cdefs.h", {st_mode=S_IFREG|0644, st_size=15412, ...}) = 0
+13710 open("/usr/include/x86_64-linux-gnu/sys/cdefs.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=15412, ...}) = 0
+13710 read(3, "/* Copyright (C) 1992-2016 Free "..., 15412) = 15412
+13710 close(3)                          = 0
+13710 write(1, "# 367 \"/usr/include/features.h\" "..., 36) = 36
+13710 write(1, "# 1 \"/usr/include/x86_64-linux-g"..., 54) = 54
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include/bits", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/bits/wordsize.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include/bits", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/local/include/bits/wordsize.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/bits", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/bits/wordsize.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/bits", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/bits/wordsize.h", {st_mode=S_IFREG|0644, st_size=327, ...}) = 0
+13710 open("/usr/include/x86_64-linux-gnu/bits/wordsize.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=327, ...}) = 0
+13710 read(3, "/* Determine the wordsize from t"..., 327) = 327
+13710 close(3)                          = 0
+13710 write(1, "# 410 \"/usr/include/x86_64-linux"..., 54) = 54
+13710 write(1, "# 1 \"/usr/include/x86_64-linux-g"..., 58) = 58
+13710 write(1, "# 411 \"/usr/include/x86_64-linux"..., 56) = 56
+13710 write(1, "# 368 \"/usr/include/features.h\" "..., 38) = 38
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include/gnu", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/gnu/stubs.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include/gnu", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/local/include/gnu/stubs.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/gnu", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/gnu/stubs.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/gnu/stubs.h", {st_mode=S_IFREG|0644, st_size=384, ...}) = 0
+13710 open("/usr/include/x86_64-linux-gnu/gnu/stubs.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=384, ...}) = 0
+13710 read(3, "/* This file is automatically ge"..., 384) = 384
+13710 close(3)                          = 0
+13710 write(1, "# 391 \"/usr/include/features.h\" "..., 36) = 36
+13710 write(1, "# 1 \"/usr/include/x86_64-linux-g"..., 54) = 54
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include/gnu", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/gnu/stubs-64.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include/gnu", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/local/include/gnu/stubs-64.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/gnu", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/gnu/stubs-64.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/gnu/stubs-64.h", {st_mode=S_IFREG|0644, st_size=613, ...}) = 0
+13710 open("/usr/include/x86_64-linux-gnu/gnu/stubs-64.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=613, ...}) = 0
+13710 read(3, "/* This file is automatically ge"..., 613) = 613
+13710 close(3)                          = 0
+13710 write(1, "# 10 \"/usr/include/x86_64-linux-"..., 53) = 53
+13710 write(1, "# 1 \"/usr/include/x86_64-linux-g"..., 57) = 57
+13710 write(1, "# 11 \"/usr/include/x86_64-linux-"..., 55) = 55
+13710 write(1, "# 392 \"/usr/include/features.h\" "..., 38) = 38
+13710 write(1, "# 28 \"/usr/include/stdio.h\" 2 3 "..., 34) = 34
+13710 write(1, "\n", 1)                 = 1
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h", {st_mode=S_IFREG|0644, st_size=13754, ...}) = 0
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=13754, ...}) = 0
+13710 read(3, "/* Copyright (C) 1989-2015 Free "..., 13754) = 13754
+13710 close(3)                          = 0
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 1 \"/usr/lib/gcc/x86_64-linux-g"..., 61) = 61
+13710 write(1, "# 216 \"/usr/lib/gcc/x86_64-linux"..., 61) = 61
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 216 \"/usr/lib/gcc/x86_64-linux"..., 61) = 61
+13710 write(1, "typedef long unsigned int size_t"..., 34) = 34
+13710 write(1, "# 34 \"/usr/include/stdio.h\" 2 3 "..., 34) = 34
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include/bits", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/bits/types.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include/bits", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/local/include/bits/types.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/bits", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/bits/types.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/bits", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/bits/types.h", {st_mode=S_IFREG|0644, st_size=7563, ...}) = 0
+13710 open("/usr/include/x86_64-linux-gnu/bits/types.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=7563, ...}) = 0
+13710 read(3, "/* bits/types.h -- definitions o"..., 7563) = 7563
+13710 close(3)                          = 0
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 1 \"/usr/include/x86_64-linux-g"..., 55) = 55
+13710 open("/usr/include/x86_64-linux-gnu/bits/wordsize.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=327, ...}) = 0
+13710 read(3, "/* Determine the wordsize from t"..., 327) = 327
+13710 close(3)                          = 0
+13710 write(1, "# 27 \"/usr/include/x86_64-linux-"..., 54) = 54
+13710 write(1, "# 1 \"/usr/include/x86_64-linux-g"..., 58) = 58
+13710 write(1, "# 28 \"/usr/include/x86_64-linux-"..., 56) = 56
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef unsigned char __u_char;\n", 32) = 32
+13710 write(1, "typedef unsigned short int __u_s"..., 38) = 38
+13710 write(1, "typedef unsigned int __u_int;\n", 30) = 30
+13710 write(1, "typedef unsigned long int __u_lo"..., 36) = 36
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef signed char __int8_t;\n", 30) = 30
+13710 write(1, "typedef unsigned char __uint8_t;"..., 33) = 33
+13710 write(1, "typedef signed short int __int16"..., 36) = 36
+13710 write(1, "typedef unsigned short int __uin"..., 39) = 39
+13710 write(1, "typedef signed int __int32_t;\n", 30) = 30
+13710 write(1, "typedef unsigned int __uint32_t;"..., 33) = 33
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef signed long int __int64_"..., 35) = 35
+13710 write(1, "typedef unsigned long int __uint"..., 38) = 38
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef long int __quad_t;\n", 27) = 27
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include/bits", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/bits/typesizes.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include/bits", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/local/include/bits/typesizes.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/bits", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/bits/typesizes.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/bits", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/bits/typesizes.h", {st_mode=S_IFREG|0644, st_size=3276, ...}) = 0
+13710 open("/usr/include/x86_64-linux-gnu/bits/typesizes.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=3276, ...}) = 0
+13710 read(3, "/* bits/typesizes.h -- underlyin"..., 3276) = 3276
+13710 close(3)                          = 0
+13710 write(1, "typedef unsigned long int __u_qu"..., 38) = 38
+13710 write(1, "# 121 \"/usr/include/x86_64-linux"..., 55) = 55
+13710 write(1, "# 1 \"/usr/include/x86_64-linux-g"..., 59) = 59
+13710 write(1, "# 122 \"/usr/include/x86_64-linux"..., 57) = 57
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef unsigned long int __dev_"..., 35) = 35
+13710 write(1, "typedef unsigned int __uid_t;\n", 30) = 30
+13710 write(1, "typedef unsigned int __gid_t;\n", 30) = 30
+13710 write(1, "typedef unsigned long int __ino_"..., 35) = 35
+13710 write(1, "typedef unsigned long int __ino6"..., 37) = 37
+13710 write(1, "typedef unsigned int __mode_t;\n", 31) = 31
+13710 write(1, "typedef unsigned long int __nlin"..., 37) = 37
+13710 write(1, "typedef long int __off_t;\n", 26) = 26
+13710 write(1, "typedef long int __off64_t;\n", 28) = 28
+13710 write(1, "typedef int __pid_t;\n", 21) = 21
+13710 write(1, "typedef struct { int __val[2]; }"..., 43) = 43
+13710 write(1, "typedef long int __clock_t;\n", 28) = 28
+13710 write(1, "typedef unsigned long int __rlim"..., 36) = 36
+13710 write(1, "typedef unsigned long int __rlim"..., 38) = 38
+13710 write(1, "typedef unsigned int __id_t;\n", 29) = 29
+13710 write(1, "typedef long int __time_t;\n", 27) = 27
+13710 write(1, "typedef unsigned int __useconds_"..., 35) = 35
+13710 write(1, "typedef long int __suseconds_t;\n", 32) = 32
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef int __daddr_t;\n", 23) = 23
+13710 write(1, "typedef int __key_t;\n", 21) = 21
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef int __clockid_t;\n", 25) = 25
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef void * __timer_t;\n", 26) = 26
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef long int __blksize_t;\n", 30) = 30
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef long int __blkcnt_t;\n", 29) = 29
+13710 write(1, "typedef long int __blkcnt64_t;\n", 31) = 31
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef unsigned long int __fsbl"..., 40) = 40
+13710 write(1, "typedef unsigned long int __fsbl"..., 42) = 42
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef unsigned long int __fsfi"..., 40) = 40
+13710 write(1, "typedef unsigned long int __fsfi"..., 42) = 42
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef long int __fsword_t;\n", 29) = 29
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef long int __ssize_t;\n", 28) = 28
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef long int __syscall_slong"..., 36) = 36
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef unsigned long int __sysc"..., 45) = 45
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef __off64_t __loff_t;\n", 28) = 28
+13710 write(1, "typedef __quad_t *__qaddr_t;\n", 29) = 29
+13710 write(1, "typedef char *__caddr_t;\n", 25) = 25
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef long int __intptr_t;\n", 29) = 29
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef unsigned int __socklen_t"..., 34) = 34
+13710 write(1, "# 36 \"/usr/include/stdio.h\" 2 3 "..., 34) = 34
+13710 write(1, "# 44 \"/usr/include/stdio.h\" 3 4\n", 32) = 32
+13710 write(1, "struct _IO_FILE;\n", 17) = 17
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef struct _IO_FILE FILE;\n", 30) = 30
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 64 \"/usr/include/stdio.h\" 3 4\n", 32) = 32
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include/libio.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/libio.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include/libio.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/local/include/libio.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/libio.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/libio.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/libio.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/include/x86_64-linux-gnu/libio.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/libio.h", {st_mode=S_IFREG|0644, st_size=17179, ...}) = 0
+13710 open("/usr/include/libio.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=17179, ...}) = 0
+13710 read(3, "/* Copyright (C) 1991-2016 Free "..., 17179) = 17179
+13710 close(3)                          = 0
+13710 write(1, "typedef struct _IO_FILE __FILE;\n", 32) = 32
+13710 write(1, "# 74 \"/usr/include/stdio.h\" 3 4\n", 32) = 32
+13710 write(1, "# 1 \"/usr/include/libio.h\" 1 3 4"..., 33) = 33
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include/_G_config.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/_G_config.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include/_G_config.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/local/include/_G_config.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/_G_config.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/_G_config.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/_G_config.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/include/x86_64-linux-gnu/_G_config.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/_G_config.h", {st_mode=S_IFREG|0644, st_size=1287, ...}) = 0
+13710 open("/usr/include/_G_config.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=1287, ...}) = 0
+13710 read(3, "/* This file is needed by libio "..., 1287) = 1287
+13710 close(3)                          = 0
+13710 write(1, "# 31 \"/usr/include/libio.h\" 3 4\n", 32) = 32
+13710 write(1, "# 1 \"/usr/include/_G_config.h\" 1"..., 37) = 37
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=13754, ...}) = 0
+13710 read(3, "/* Copyright (C) 1989-2015 Free "..., 13754) = 13754
+13710 close(3)                          = 0
+13710 write(1, "# 15 \"/usr/include/_G_config.h\" "..., 36) = 36
+13710 write(1, "# 1 \"/usr/lib/gcc/x86_64-linux-g"..., 61) = 61
+13710 write(1, "# 16 \"/usr/include/_G_config.h\" "..., 38) = 38
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include/wchar.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/wchar.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include/wchar.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/local/include/wchar.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/wchar.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/wchar.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/wchar.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/include/x86_64-linux-gnu/wchar.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/wchar.h", {st_mode=S_IFREG|0644, st_size=32124, ...}) = 0
+13710 open("/usr/include/wchar.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=32124, ...}) = 0
+13710 brk(0x36ef000)                    = 0x36ef000
+13710 read(3, "/* Copyright (C) 1995-2016 Free "..., 32124) = 32124
+13710 close(3)                          = 0
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 1 \"/usr/include/wchar.h\" 1 3 4"..., 33) = 33
+13710 write(1, "# 82 \"/usr/include/wchar.h\" 3 4\n", 32) = 32
+13710 write(1, "typedef struct\n", 15)  = 15
+13710 write(1, "{\n", 2)                = 2
+13710 write(1, "  int __count;\n", 15)  = 15
+13710 write(1, "  union\n", 8)          = 8
+13710 write(1, "  {\n", 4)              = 4
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "    unsigned int __wch;\n", 24) = 24
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "    char __wchb[4];\n", 20) = 20
+13710 write(1, "  } __value;\n", 13)    = 13
+13710 brk(0x36e7000)                    = 0x36e7000
+13710 write(1, "} __mbstate_t;\n", 15)  = 15
+13710 write(1, "# 21 \"/usr/include/_G_config.h\" "..., 38) = 38
+13710 write(1, "typedef struct\n", 15)  = 15
+13710 write(1, "{\n", 2)                = 2
+13710 write(1, "  __off_t __pos;\n", 17) = 17
+13710 write(1, "  __mbstate_t __state;\n", 23) = 23
+13710 write(1, "} _G_fpos_t;\n", 13)    = 13
+13710 write(1, "typedef struct\n", 15)  = 15
+13710 write(1, "{\n", 2)                = 2
+13710 write(1, "  __off64_t __pos;\n", 19) = 19
+13710 write(1, "  __mbstate_t __state;\n", 23) = 23
+13710 write(1, "} _G_fpos64_t;\n", 15)  = 15
+13710 write(1, "# 32 \"/usr/include/libio.h\" 2 3 "..., 34) = 34
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h", {st_mode=S_IFREG|0644, st_size=4075, ...}) = 0
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=4075, ...}) = 0
+13710 read(3, "/* Copyright (C) 1989-2015 Free "..., 4075) = 4075
+13710 close(3)                          = 0
+13710 write(1, "# 49 \"/usr/include/libio.h\" 3 4\n", 32) = 32
+13710 write(1, "# 1 \"/usr/lib/gcc/x86_64-linux-g"..., 61) = 61
+13710 write(1, "# 40 \"/usr/lib/gcc/x86_64-linux-"..., 60) = 60
+13710 write(1, "typedef __builtin_va_list __gnuc"..., 42) = 42
+13710 write(1, "# 50 \"/usr/include/libio.h\" 2 3 "..., 34) = 34
+13710 write(1, "# 144 \"/usr/include/libio.h\" 3 4"..., 33) = 33
+13710 write(1, "struct _IO_jump_t; struct _IO_FI"..., 36) = 36
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef void _IO_lock_t;\n", 25) = 25
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "struct _IO_marker {\n", 20) = 20
+13710 write(1, "  struct _IO_marker *_next;\n", 28) = 28
+13710 write(1, "  struct _IO_FILE *_sbuf;\n", 26) = 26
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "  int _pos;\n", 12)     = 12
+13710 write(1, "# 173 \"/usr/include/libio.h\" 3 4"..., 33) = 33
+13710 write(1, "};\n", 3)               = 3
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "enum __codecvt_result\n", 22) = 22
+13710 write(1, "{\n", 2)                = 2
+13710 write(1, "  __codecvt_ok,\n", 16) = 16
+13710 write(1, "  __codecvt_partial,\n", 21) = 21
+13710 write(1, "  __codecvt_error,\n", 19) = 19
+13710 write(1, "  __codecvt_noconv\n", 19) = 19
+13710 write(1, "};\n", 3)               = 3
+13710 write(1, "# 241 \"/usr/include/libio.h\" 3 4"..., 33) = 33
+13710 write(1, "struct _IO_FILE {\n", 18) = 18
+13710 write(1, "  int _flags;\n", 14)   = 14
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "  char* _IO_read_ptr;\n", 22) = 22
+13710 write(1, "  char* _IO_read_end;\n", 22) = 22
+13710 write(1, "  char* _IO_read_base;\n", 23) = 23
+13710 write(1, "  char* _IO_write_base;\n", 24) = 24
+13710 write(1, "  char* _IO_write_ptr;\n", 23) = 23
+13710 write(1, "  char* _IO_write_end;\n", 23) = 23
+13710 write(1, "  char* _IO_buf_base;\n", 22) = 22
+13710 write(1, "  char* _IO_buf_end;\n", 21) = 21
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "  char *_IO_save_base;\n", 23) = 23
+13710 write(1, "  char *_IO_backup_base;\n", 25) = 25
+13710 write(1, "  char *_IO_save_end;\n", 22) = 22
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "  struct _IO_marker *_markers;\n", 31) = 31
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "  struct _IO_FILE *_chain;\n", 27) = 27
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "  int _fileno;\n", 15)  = 15
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "  int _flags2;\n", 15)  = 15
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "  __off_t _old_offset;\n", 23) = 23
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "  unsigned short _cur_column;\n", 30) = 30
+13710 write(1, "  signed char _vtable_offset;\n", 30) = 30
+13710 write(1, "  char _shortbuf[1];\n", 21) = 21
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "  _IO_lock_t *_lock;\n", 21) = 21
+13710 write(1, "# 289 \"/usr/include/libio.h\" 3 4"..., 33) = 33
+13710 write(1, "  __off64_t _offset;\n", 21) = 21
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "  void *__pad1;\n", 16) = 16
+13710 write(1, "  void *__pad2;\n", 16) = 16
+13710 write(1, "  void *__pad3;\n", 16) = 16
+13710 write(1, "  void *__pad4;\n", 16) = 16
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "  size_t __pad5;\n", 17) = 17
+13710 write(1, "  int _mode;\n", 13)    = 13
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "  char _unused2[15 * sizeof (int"..., 76) = 76
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "};\n", 3)               = 3
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef struct _IO_FILE _IO_FILE"..., 34) = 34
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "struct _IO_FILE_plus;\n", 22) = 22
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern struct _IO_FILE_plus _IO_"..., 44) = 44
+13710 write(1, "extern struct _IO_FILE_plus _IO_"..., 45) = 45
+13710 write(1, "extern struct _IO_FILE_plus _IO_"..., 45) = 45
+13710 write(1, "# 333 \"/usr/include/libio.h\" 3 4"..., 33) = 33
+13710 write(1, "typedef __ssize_t __io_read_fn ("..., 79) = 79
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef __ssize_t __io_write_fn "..., 68) = 68
+13710 write(1, "     size_t __n);\n", 18) = 18
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef int __io_seek_fn (void *"..., 70) = 70
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef int __io_close_fn (void "..., 44) = 44
+13710 write(1, "# 385 \"/usr/include/libio.h\" 3 4"..., 33) = 33
+13710 write(1, "extern int __underflow (_IO_FILE"..., 37) = 37
+13710 write(1, "extern int __uflow (_IO_FILE *);"..., 33) = 33
+13710 write(1, "extern int __overflow (_IO_FILE "..., 41) = 41
+13710 write(1, "# 429 \"/usr/include/libio.h\" 3 4"..., 33) = 33
+13710 write(1, "extern int _IO_getc (_IO_FILE *_"..., 38) = 38
+13710 write(1, "extern int _IO_putc (int __c, _I"..., 47) = 47
+13710 write(1, "extern int _IO_feof (_IO_FILE *_"..., 79) = 79
+13710 write(1, "extern int _IO_ferror (_IO_FILE "..., 81) = 81
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int _IO_peekc_locked (_IO"..., 46) = 46
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern void _IO_flockfile (_IO_F"..., 81) = 81
+13710 write(1, "extern void _IO_funlockfile (_IO"..., 83) = 83
+13710 write(1, "extern int _IO_ftrylockfile (_IO"..., 83) = 83
+13710 write(1, "# 459 \"/usr/include/libio.h\" 3 4"..., 33) = 33
+13710 write(1, "extern int _IO_vfscanf (_IO_FILE"..., 72) = 72
+13710 write(1, "   __gnuc_va_list, int *__restri"..., 37) = 37
+13710 write(1, "extern int _IO_vfprintf (_IO_FIL"..., 71) = 71
+13710 write(1, "    __gnuc_va_list);\n", 21) = 21
+13710 write(1, "extern __ssize_t _IO_padn (_IO_F"..., 56) = 56
+13710 write(1, "extern size_t _IO_sgetn (_IO_FIL"..., 54) = 54
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern __off64_t _IO_seekoff (_I"..., 64) = 64
+13710 write(1, "extern __off64_t _IO_seekpos (_I"..., 59) = 59
+13710 write(1, "\n", 1)                 = 1
+13710 brk(0x36e3000)                    = 0x36e3000
+13710 write(1, "extern void _IO_free_backup_area"..., 88) = 88
+13710 write(1, "# 75 \"/usr/include/stdio.h\" 2 3 "..., 34) = 34
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef __gnuc_va_list va_list;\n", 32) = 32
+13710 write(1, "# 90 \"/usr/include/stdio.h\" 3 4\n", 32) = 32
+13710 write(1, "typedef __off_t off_t;\n", 23) = 23
+13710 write(1, "# 102 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "typedef __ssize_t ssize_t;\n", 27) = 27
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef _G_fpos_t fpos_t;\n", 26) = 26
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include/bits", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/bits/stdio_lim.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include/bits", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/local/include/bits/stdio_lim.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/bits", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/bits/stdio_lim.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/bits", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/bits/stdio_lim.h", {st_mode=S_IFREG|0644, st_size=1354, ...}) = 0
+13710 open("/usr/include/x86_64-linux-gnu/bits/stdio_lim.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=1354, ...}) = 0
+13710 read(3, "/* Copyright (C) 1994-2016 Free "..., 1354) = 1354
+13710 close(3)                          = 0
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 164 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "# 1 \"/usr/include/x86_64-linux-g"..., 59) = 59
+13710 write(1, "# 165 \"/usr/include/stdio.h\" 2 3"..., 35) = 35
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern struct _IO_FILE *stdin;\n", 31) = 31
+13710 write(1, "extern struct _IO_FILE *stdout;\n", 32) = 32
+13710 write(1, "extern struct _IO_FILE *stderr;\n", 32) = 32
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int remove (const char *_"..., 85) = 85
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int rename (const char *_"..., 99) = 99
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int renameat (int __oldfd"..., 66) = 66
+13710 write(1, "       const char *__new) __attr"..., 68) = 68
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern FILE *tmpfile (void) ;\n", 30) = 30
+13710 write(1, "# 209 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "extern char *tmpnam (char *__s) "..., 75) = 75
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern char *tmpnam_r (char *__s"..., 77) = 77
+13710 write(1, "# 227 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "extern char *tempnam (const char"..., 60) = 60
+13710 write(1, "     __attribute__ ((__nothrow__"..., 77) = 77
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int fclose (FILE *__strea"..., 36) = 36
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int fflush (FILE *__strea"..., 36) = 36
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 252 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "extern int fflush_unlocked (FILE"..., 45) = 45
+13710 write(1, "# 266 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern FILE *fopen (const char *"..., 55) = 55
+13710 write(1, "      const char *__restrict __m"..., 40) = 40
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern FILE *freopen (const char"..., 57) = 57
+13710 write(1, "        const char *__restrict _"..., 40) = 40
+13710 write(1, "        FILE *__restrict __strea"..., 37) = 37
+13710 write(1, "# 295 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 306 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "extern FILE *fdopen (int __fd, c"..., 95) = 95
+13710 write(1, "# 319 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "extern FILE *fmemopen (void *__s"..., 69) = 69
+13710 write(1, "  __attribute__ ((__nothrow__ , "..., 45) = 45
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern FILE *open_memstream (cha"..., 108) = 108
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern void setbuf (FILE *__rest"..., 113) = 113
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int setvbuf (FILE *__rest"..., 71) = 71
+13710 write(1, "      int __modes, size_t __n) _"..., 73) = 73
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern void setbuffer (FILE *__r"..., 74) = 74
+13710 write(1, "         size_t __size) __attrib"..., 66) = 66
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern void setlinebuf (FILE *__"..., 82) = 82
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int fprintf (FILE *__rest"..., 47) = 47
+13710 write(1, "      const char *__restrict __f"..., 45) = 45
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int printf (const char *_"..., 58) = 58
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int sprintf (char *__rest"..., 42) = 42
+13710 write(1, "      const char *__restrict __f"..., 75) = 75
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int vfprintf (FILE *__res"..., 76) = 76
+13710 write(1, "       __gnuc_va_list __arg);\n", 30) = 30
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int vprintf (const char *"..., 76) = 76
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int vsprintf (char *__res"..., 76) = 76
+13710 write(1, "       __gnuc_va_list __arg) __a"..., 60) = 60
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int snprintf (char *__res"..., 60) = 60
+13710 write(1, "       const char *__restrict __"..., 45) = 45
+13710 write(1, "     __attribute__ ((__nothrow__"..., 84) = 84
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int vsnprintf (char *__re"..., 61) = 61
+13710 write(1, "        const char *__restrict _"..., 63) = 63
+13710 write(1, "     __attribute__ ((__nothrow__"..., 84) = 84
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 412 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "extern int vdprintf (int __fd, c"..., 61) = 61
+13710 write(1, "       __gnuc_va_list __arg)\n", 29) = 29
+13710 write(1, "     __attribute__ ((__format__ "..., 54) = 54
+13710 write(1, "extern int dprintf (int __fd, co"..., 65) = 65
+13710 write(1, "     __attribute__ ((__format__ "..., 54) = 54
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int fscanf (FILE *__restr"..., 46) = 46
+13710 write(1, "     const char *__restrict __fo"..., 45) = 45
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int scanf (const char *__"..., 58) = 58
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int sscanf (const char *_"..., 47) = 47
+13710 write(1, "     const char *__restrict __fo"..., 85) = 85
+13710 write(1, "# 443 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "extern int fscanf (FILE *__restr"..., 115) = 115
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "                               ;"..., 33) = 33
+13710 write(1, "extern int scanf (const char *__"..., 86) = 86
+13710 write(1, "                              ;\n", 32) = 32
+13710 write(1, "extern int sscanf (const char *_"..., 157) = 157
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "                      ;\n", 24) = 24
+13710 write(1, "# 463 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int vfscanf (FILE *__rest"..., 75) = 75
+13710 write(1, "      __gnuc_va_list __arg)\n", 28) = 28
+13710 write(1, "     __attribute__ ((__format__ "..., 54) = 54
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int vscanf (const char *_"..., 74) = 74
+13710 write(1, "     __attribute__ ((__format__ "..., 54) = 54
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int vsscanf (const char *"..., 48) = 48
+13710 write(1, "      const char *__restrict __f"..., 61) = 61
+13710 write(1, "     __attribute__ ((__nothrow__"..., 94) = 94
+13710 write(1, "# 494 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "extern int vfscanf (FILE *__rest"..., 129) = 129
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "     __attribute__ ((__format__ "..., 54) = 54
+13710 write(1, "extern int vscanf (const char *_"..., 105) = 105
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "     __attribute__ ((__format__ "..., 54) = 54
+13710 write(1, "extern int vsscanf (const char *"..., 176) = 176
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "     __attribute__ ((__format__ "..., 53) = 53
+13710 write(1, "# 522 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int fgetc (FILE *__stream"..., 35) = 35
+13710 write(1, "extern int getc (FILE *__stream)"..., 34) = 34
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int getchar (void);\n", 27) = 27
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 550 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "extern int getc_unlocked (FILE *"..., 43) = 43
+13710 write(1, "extern int getchar_unlocked (voi"..., 36) = 36
+13710 write(1, "# 561 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "extern int fgetc_unlocked (FILE "..., 44) = 44
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int fputc (int __c, FILE "..., 44) = 44
+13710 write(1, "extern int putc (int __c, FILE *"..., 43) = 43
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int putchar (int __c);\n", 30) = 30
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 594 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "extern int fputc_unlocked (int _"..., 53) = 53
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int putc_unlocked (int __"..., 52) = 52
+13710 write(1, "extern int putchar_unlocked (int"..., 39) = 39
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int getw (FILE *__stream)"..., 34) = 34
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int putw (int __w, FILE *"..., 43) = 43
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern char *fgets (char *__rest"..., 78) = 78
+13710 write(1, "     ;\n", 7)           = 7
+13710 write(1, "# 640 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 665 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "extern __ssize_t __getdelim (cha"..., 58) = 58
+13710 write(1, "          size_t *__restrict __n"..., 51) = 51
+13710 write(1, "          FILE *__restrict __str"..., 39) = 39
+13710 write(1, "extern __ssize_t getdelim (char "..., 56) = 56
+13710 write(1, "        size_t *__restrict __n, "..., 49) = 49
+13710 write(1, "        FILE *__restrict __strea"..., 37) = 37
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern __ssize_t getline (char *"..., 55) = 55
+13710 write(1, "       size_t *__restrict __n,\n", 31) = 31
+13710 write(1, "       FILE *__restrict __stream"..., 36) = 36
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int fputs (const char *__"..., 74) = 74
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int puts (const char *__s"..., 35) = 35
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int ungetc (int __c, FILE"..., 45) = 45
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern size_t fread (void *__res"..., 60) = 60
+13710 write(1, "       size_t __n, FILE *__restr"..., 48) = 48
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern size_t fwrite (const void"..., 67) = 67
+13710 write(1, "        size_t __n, FILE *__rest"..., 43) = 43
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 737 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "extern size_t fread_unlocked (vo"..., 69) = 69
+13710 write(1, "         size_t __n, FILE *__res"..., 50) = 50
+13710 write(1, "extern size_t fwrite_unlocked (c"..., 76) = 76
+13710 write(1, "          size_t __n, FILE *__re"..., 50) = 50
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int fseek (FILE *__stream"..., 65) = 65
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern long int ftell (FILE *__s"..., 41) = 41
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern void rewind (FILE *__stre"..., 37) = 37
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 773 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "extern int fseeko (FILE *__strea"..., 65) = 65
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern __off_t ftello (FILE *__s"..., 41) = 41
+13710 write(1, "# 792 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int fgetpos (FILE *__rest"..., 74) = 74
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int fsetpos (FILE *__stre"..., 58) = 58
+13710 write(1, "# 815 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 824 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern void clearerr (FILE *__st"..., 80) = 80
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int feof (FILE *__stream)"..., 76) = 76
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int ferror (FILE *__strea"..., 78) = 78
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern void clearerr_unlocked (F"..., 89) = 89
+13710 write(1, "extern int feof_unlocked (FILE *"..., 85) = 85
+13710 write(1, "extern int ferror_unlocked (FILE"..., 87) = 87
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern void perror (const char *"..., 38) = 38
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include/bits", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/bits/sys_errlist.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include/bits", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/local/include/bits/sys_errlist.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/bits", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/bits/sys_errlist.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/bits", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/bits/sys_errlist.h", {st_mode=S_IFREG|0644, st_size=1215, ...}) = 0
+13710 open("/usr/include/x86_64-linux-gnu/bits/sys_errlist.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=1215, ...}) = 0
+13710 read(3, "/* Declare sys_errlist and sys_n"..., 1215) = 1215
+13710 close(3)                          = 0
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 1 \"/usr/include/x86_64-linux-g"..., 61) = 61
+13710 write(1, "# 26 \"/usr/include/x86_64-linux-"..., 60) = 60
+13710 write(1, "extern int sys_nerr;\n", 21) = 21
+13710 write(1, "extern const char *const sys_err"..., 40) = 40
+13710 write(1, "# 854 \"/usr/include/stdio.h\" 2 3"..., 35) = 35
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int fileno (FILE *__strea"..., 78) = 78
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int fileno_unlocked (FILE"..., 87) = 87
+13710 write(1, "# 872 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd1c98f4000
+13710 write(1, "extern FILE *popen (const char *"..., 66) = 66
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int pclose (FILE *__strea"..., 36) = 36
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern char *ctermid (char *__s)"..., 75) = 75
+13710 write(1, "# 912 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "extern void flockfile (FILE *__s"..., 81) = 81
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int ftrylockfile (FILE *_"..., 84) = 84
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern void funlockfile (FILE *_"..., 83) = 83
+13710 write(1, "# 942 \"/usr/include/stdio.h\" 3 4"..., 33) = 33
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 2 \"vatest.c\" 2\n", 17) = 17
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=4075, ...}) = 0
+13710 read(3, "/* Copyright (C) 1989-2015 Free "..., 4075) = 4075
+13710 close(3)                          = 0
+13710 write(1, "# 1 \"/usr/lib/gcc/x86_64-linux-g"..., 61) = 61
+13710 write(1, "# 3 \"vatest.c\" 2\n", 17) = 17
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include/string.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/string.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include/string.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/local/include/string.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/string.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/string.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/string.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/include/x86_64-linux-gnu/string.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/string.h", {st_mode=S_IFREG|0644, st_size=22663, ...}) = 0
+13710 open("/usr/include/string.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=22663, ...}) = 0
+13710 read(3, "/* Copyright (C) 1991-2016 Free "..., 22663) = 22663
+13710 close(3)                          = 0
+13710 write(1, "# 1 \"/usr/include/string.h\" 1 3 "..., 34) = 34
+13710 write(1, "# 27 \"/usr/include/string.h\" 3 4"..., 33) = 33
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=13754, ...}) = 0
+13710 read(3, "/* Copyright (C) 1989-2015 Free "..., 13754) = 13754
+13710 close(3)                          = 0
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 1 \"/usr/lib/gcc/x86_64-linux-g"..., 61) = 61
+13710 write(1, "# 33 \"/usr/include/string.h\" 2 3"..., 35) = 35
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern void *memcpy (void *__res"..., 76) = 76
+13710 write(1, "       size_t __n) __attribute__"..., 98) = 98
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern void *memmove (void *__de"..., 67) = 67
+13710 write(1, "     __attribute__ ((__nothrow__"..., 84) = 84
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern void *memccpy (void *__re"..., 77) = 77
+13710 write(1, "        int __c, size_t __n)\n", 29) = 29
+13710 write(1, "     __attribute__ ((__nothrow__"..., 84) = 84
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern void *memset (void *__s, "..., 129) = 129
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int memcmp (const void *_"..., 67) = 67
+13710 write(1, "     __attribute__ ((__nothrow__"..., 111) = 111
+13710 write(1, "# 92 \"/usr/include/string.h\" 3 4"..., 33) = 33
+13710 write(1, "extern void *memchr (const void "..., 59) = 59
+13710 write(1, "      __attribute__ ((__nothrow_"..., 109) = 109
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 123 \"/usr/include/string.h\" 3 "..., 34) = 34
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern char *strcpy (char *__res"..., 76) = 76
+13710 write(1, "     __attribute__ ((__nothrow__"..., 84) = 84
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern char *strncpy (char *__re"..., 47) = 47
+13710 write(1, "        const char *__restrict _"..., 50) = 50
+13710 write(1, "     __attribute__ ((__nothrow__"..., 84) = 84
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern char *strcat (char *__res"..., 76) = 76
+13710 write(1, "     __attribute__ ((__nothrow__"..., 84) = 84
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern char *strncat (char *__re"..., 77) = 77
+13710 write(1, "        size_t __n) __attribute_"..., 99) = 99
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int strcmp (const char *_"..., 55) = 55
+13710 write(1, "     __attribute__ ((__nothrow__"..., 111) = 111
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int strncmp (const char *"..., 68) = 68
+13710 write(1, "     __attribute__ ((__nothrow__"..., 111) = 111
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int strcoll (const char *"..., 56) = 56
+13710 write(1, "     __attribute__ ((__nothrow__"..., 111) = 111
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern size_t strxfrm (char *__r"..., 48) = 48
+13710 write(1, "         const char *__restrict "..., 51) = 51
+13710 write(1, "     __attribute__ ((__nothrow__"..., 81) = 81
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include/xlocale.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include/xlocale.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/local/include/xlocale.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/local/include/xlocale.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/xlocale.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/xlocale.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include/x86_64-linux-gnu/xlocale.h", 0x7fff483241f0) = -1 ENOENT (No such file or directory)
+13710 open("/usr/include/x86_64-linux-gnu/xlocale.h", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+13710 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13710 lstat("/usr/include", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+13710 lstat("/usr/include/xlocale.h", {st_mode=S_IFREG|0644, st_size=1689, ...}) = 0
+13710 open("/usr/include/xlocale.h", O_RDONLY|O_NOCTTY) = 3
+13710 fstat(3, {st_mode=S_IFREG|0644, st_size=1689, ...}) = 0
+13710 read(3, "/* Definition of locale datatype"..., 1689) = 1689
+13710 close(3)                          = 0
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 1 \"/usr/include/xlocale.h\" 1 3"..., 35) = 35
+13710 write(1, "# 27 \"/usr/include/xlocale.h\" 3 "..., 34) = 34
+13710 write(1, "typedef struct __locale_struct\n", 31) = 31
+13710 write(1, "{\n", 2)                = 2
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "  struct __locale_data *__locale"..., 39) = 39
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "  const unsigned short int *__ct"..., 39) = 39
+13710 write(1, "  const int *__ctype_tolower;\n", 30) = 30
+13710 write(1, "  const int *__ctype_toupper;\n", 30) = 30
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "  const char *__names[13];\n", 27) = 27
+13710 write(1, "} *__locale_t;\n", 15)  = 15
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "typedef __locale_t locale_t;\n", 29) = 29
+13710 write(1, "# 160 \"/usr/include/string.h\" 2 "..., 36) = 36
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int strcoll_l (const char"..., 74) = 74
+13710 write(1, "     __attribute__ ((__nothrow__"..., 114) = 114
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern size_t strxfrm_l (char *_"..., 70) = 70
+13710 write(1, "    __locale_t __l) __attribute_"..., 99) = 99
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern char *strdup (const char "..., 38) = 38
+13710 write(1, "     __attribute__ ((__nothrow__"..., 110) = 110
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern char *strndup (const char"..., 56) = 56
+13710 write(1, "     __attribute__ ((__nothrow__"..., 110) = 110
+13710 write(1, "# 206 \"/usr/include/string.h\" 3 "..., 34) = 34
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 231 \"/usr/include/string.h\" 3 "..., 34) = 34
+13710 write(1, "extern char *strchr (const char "..., 47) = 47
+13710 write(1, "     __attribute__ ((__nothrow__"..., 108) = 108
+13710 write(1, "# 258 \"/usr/include/string.h\" 3 "..., 34) = 34
+13710 write(1, "extern char *strrchr (const char"..., 48) = 48
+13710 write(1, "     __attribute__ ((__nothrow__"..., 108) = 108
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 277 \"/usr/include/string.h\" 3 "..., 34) = 34
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern size_t strcspn (const cha"..., 62) = 62
+13710 write(1, "     __attribute__ ((__nothrow__"..., 111) = 111
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern size_t strspn (const char"..., 61) = 61
+13710 write(1, "     __attribute__ ((__nothrow__"..., 111) = 111
+13710 write(1, "# 310 \"/usr/include/string.h\" 3 "..., 34) = 34
+13710 write(1, "extern char *strpbrk (const char"..., 61) = 61
+13710 write(1, "     __attribute__ ((__nothrow__"..., 111) = 111
+13710 write(1, "# 337 \"/usr/include/string.h\" 3 "..., 34) = 34
+13710 write(1, "extern char *strstr (const char "..., 67) = 67
+13710 write(1, "     __attribute__ ((__nothrow__"..., 111) = 111
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern char *strtok (char *__res"..., 75) = 75
+13710 write(1, "     __attribute__ ((__nothrow__"..., 81) = 81
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern char *__strtok_r (char *_"..., 47) = 47
+13710 write(1, "    const char *__restrict __del"..., 36) = 36
+13710 write(1, "    char **__restrict __save_ptr"..., 34) = 34
+13710 write(1, "     __attribute__ ((__nothrow__"..., 84) = 84
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern char *strtok_r (char *__r"..., 77) = 77
+13710 write(1, "         char **__restrict __sav"..., 39) = 39
+13710 write(1, "     __attribute__ ((__nothrow__"..., 84) = 84
+13710 write(1, "# 392 \"/usr/include/string.h\" 3 "..., 34) = 34
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern size_t strlen (const char"..., 39) = 39
+13710 write(1, "     __attribute__ ((__nothrow__"..., 108) = 108
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern size_t strnlen (const cha"..., 62) = 62
+13710 write(1, "     __attribute__ ((__nothrow__"..., 108) = 108
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern char *strerror (int __err"..., 79) = 79
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 422 \"/usr/include/string.h\" 3 "..., 34) = 34
+13710 write(1, "extern int strerror_r (int __err"..., 140) = 140
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "                        __attrib"..., 59) = 59
+13710 write(1, "# 440 \"/usr/include/string.h\" 3 "..., 34) = 34
+13710 write(1, "extern char *strerror_l (int __e"..., 97) = 97
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern void __bzero (void *__s, "..., 120) = 120
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern void bcopy (const void *_"..., 64) = 64
+13710 write(1, "     __attribute__ ((__nothrow__"..., 84) = 84
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern void bzero (void *__s, si"..., 118) = 118
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int bcmp (const void *__s"..., 65) = 65
+13710 write(1, "     __attribute__ ((__nothrow__"..., 111) = 111
+13710 write(1, "# 484 \"/usr/include/string.h\" 3 "..., 34) = 34
+13710 write(1, "extern char *index (const char *"..., 46) = 46
+13710 write(1, "     __attribute__ ((__nothrow__"..., 108) = 108
+13710 write(1, "# 512 \"/usr/include/string.h\" 3 "..., 34) = 34
+13710 write(1, "extern char *rindex (const char "..., 47) = 47
+13710 write(1, "     __attribute__ ((__nothrow__"..., 108) = 108
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int ffs (int __i) __attri"..., 95) = 95
+13710 write(1, "# 529 \"/usr/include/string.h\" 3 "..., 34) = 34
+13710 write(1, "extern int strcasecmp (const cha"..., 59) = 59
+13710 write(1, "     __attribute__ ((__nothrow__"..., 111) = 111
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern int strncasecmp (const ch"..., 72) = 72
+13710 write(1, "     __attribute__ ((__nothrow__"..., 111) = 111
+13710 write(1, "# 552 \"/usr/include/string.h\" 3 "..., 34) = 34
+13710 write(1, "extern char *strsep (char **__re"..., 50) = 50
+13710 write(1, "       const char *__restrict __"..., 39) = 39
+13710 write(1, "     __attribute__ ((__nothrow__"..., 84) = 84
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern char *strsignal (int __si"..., 77) = 77
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern char *__stpcpy (char *__r"..., 78) = 78
+13710 write(1, "     __attribute__ ((__nothrow__"..., 84) = 84
+13710 write(1, "extern char *stpcpy (char *__res"..., 76) = 76
+13710 write(1, "     __attribute__ ((__nothrow__"..., 84) = 84
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "extern char *__stpncpy (char *__"..., 49) = 49
+13710 write(1, "   const char *__restrict __src,"..., 45) = 45
+13710 write(1, "     __attribute__ ((__nothrow__"..., 84) = 84
+13710 write(1, "extern char *stpncpy (char *__re"..., 47) = 47
+13710 write(1, "        const char *__restrict _"..., 50) = 50
+13710 write(1, "     __attribute__ ((__nothrow__"..., 84) = 84
+13710 write(1, "# 658 \"/usr/include/string.h\" 3 "..., 34) = 34
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 4 \"vatest.c\" 2\n", 17) = 17
+13710 write(1, "# 25 \"vatest.c\"\n", 16) = 16
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "# 25 \"vatest.c\"\n", 16) = 16
+13710 write(1, "void write_log( char *fmt, ...)\n", 32) = 32
+13710 write(1, "{\n", 2)                = 2
+13710 write(1, "    va_list va;\n", 16) = 16
+13710 write(1, "    char buf[1024]=\"[func:%s]\"\"t"..., 38) = 38
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "    \n", 5)             = 5
+13710 write(1, "# 30 \"vatest.c\" 3 4\n", 20) = 20
+13710 write(1, "   __builtin_va_start(\n", 23) = 23
+13710 write(1, "# 30 \"vatest.c\"\n", 16) = 16
+13710 write(1, "   va\n", 6)            = 6
+13710 write(1, "# 30 \"vatest.c\" 3 4\n", 20) = 20
+13710 write(1, "   ,\n", 5)             = 5
+13710 write(1, "# 30 \"vatest.c\"\n", 16) = 16
+13710 write(1, "   fmt\n", 7)           = 7
+13710 write(1, "# 30 \"vatest.c\" 3 4\n", 20) = 20
+13710 write(1, "   )\n", 5)             = 5
+13710 write(1, "# 30 \"vatest.c\"\n", 16) = 16
+13710 write(1, "                    ;\n", 22) = 22
+13710 write(1, "    memset(buf, 0, 1024);\n", 26) = 26
+13710 write(1, "    (void) vsprintf(buf, fmt, va"..., 35) = 35
+13710 write(1, "    \n", 5)             = 5
+13710 write(1, "# 33 \"vatest.c\" 3 4\n", 20) = 20
+13710 write(1, "   __builtin_va_end(\n", 21) = 21
+13710 write(1, "# 33 \"vatest.c\"\n", 16) = 16
+13710 write(1, "   va\n", 6)            = 6
+13710 write(1, "# 33 \"vatest.c\" 3 4\n", 20) = 20
+13710 write(1, "   )\n", 5)             = 5
+13710 write(1, "# 33 \"vatest.c\"\n", 16) = 16
+13710 write(1, "             ;\n", 15)  = 15
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "    printf(\"%s-%s\", \"my_log_preh"..., 44) = 44
+13710 write(1, "}\n", 2)                = 2
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "void read_num(int num, ...)\n", 28) = 28
+13710 write(1, "{\n", 2)                = 2
+13710 write(1, "    va_list va;\n", 16) = 16
+13710 write(1, "    \n", 5)             = 5
+13710 write(1, "# 41 \"vatest.c\" 3 4\n", 20) = 20
+13710 write(1, "   __builtin_va_start(\n", 23) = 23
+13710 write(1, "# 41 \"vatest.c\"\n", 16) = 16
+13710 write(1, "   va\n", 6)            = 6
+13710 write(1, "# 41 \"vatest.c\" 3 4\n", 20) = 20
+13710 write(1, "   ,\n", 5)             = 5
+13710 write(1, "# 41 \"vatest.c\"\n", 16) = 16
+13710 write(1, "   num\n", 7)           = 7
+13710 write(1, "# 41 \"vatest.c\" 3 4\n", 20) = 20
+13710 write(1, "   )\n", 5)             = 5
+13710 write(1, "# 41 \"vatest.c\"\n", 16) = 16
+13710 write(1, "                    ;\n", 22) = 22
+13710 write(1, "    while(num--)\n", 17) = 17
+13710 write(1, "    {\n", 6)            = 6
+13710 write(1, "        printf(\"%d\\t\", \n", 24) = 24
+13710 write(1, "# 44 \"vatest.c\" 3 4\n", 20) = 20
+13710 write(1, "                      __builtin_"..., 40) = 40
+13710 write(1, "# 44 \"vatest.c\"\n", 16) = 16
+13710 write(1, "                      va\n", 25) = 25
+13710 write(1, "# 44 \"vatest.c\" 3 4\n", 20) = 20
+13710 write(1, "                      ,\n", 24) = 24
+13710 write(1, "# 44 \"vatest.c\"\n", 16) = 16
+13710 write(1, "                      int\n", 26) = 26
+13710 write(1, "# 44 \"vatest.c\" 3 4\n", 20) = 20
+13710 write(1, "                      )\n", 24) = 24
+13710 write(1, "# 44 \"vatest.c\"\n", 16) = 16
+13710 write(1, "                                "..., 40) = 40
+13710 write(1, "    }\n", 6)            = 6
+13710 write(1, "    \n", 5)             = 5
+13710 write(1, "# 46 \"vatest.c\" 3 4\n", 20) = 20
+13710 write(1, "   __builtin_va_end(\n", 21) = 21
+13710 write(1, "# 46 \"vatest.c\"\n", 16) = 16
+13710 write(1, "   va\n", 6)            = 6
+13710 write(1, "# 46 \"vatest.c\" 3 4\n", 20) = 20
+13710 write(1, "   )\n", 5)             = 5
+13710 write(1, "# 46 \"vatest.c\"\n", 16) = 16
+13710 write(1, "             ;\n", 15)  = 15
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "    printf(\"\\n\");\n", 18) = 18
+13710 write(1, "}\n", 2)                = 2
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "int main()\n", 11)      = 11
+13710 write(1, "{\n", 2)                = 2
+13710 write(1, "    int a = 10;\n", 16) = 16
+13710 write(1, "    write_log(\"%s\\n\", \"hello wor"..., 39) = 39
+13710 write(1, "    read_num(3, 111, 222, 333);\n", 32) = 32
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "    printf(\"[%s]\"\"mylog test\\n\","..., 44) = 44
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "    do { fprintf(\n", 18) = 18
+13710 write(1, "# 66 \"vatest.c\" 3 4\n", 20) = 20
+13710 write(1, "   stderr\n", 10)       = 10
+13710 write(1, "# 66 \"vatest.c\"\n", 16) = 16
+13710 write(1, "   , \"[%s|%s@%s,%d] \" \"testLOG\" "..., 88) = 88
+13710 write(1, "\n", 1)                 = 1
+13710 write(1, "    return 0;\n", 14)   = 14
+13710 write(1, "}\n", 2)                = 2
+13710 close(1)                          = 0
+13710 exit_group(0)                     = ?
+13710 +++ exited with 0 +++
+13708 <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 13710
+13708 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=13710, si_uid=1000, si_status=0, si_utime=1, si_stime=2} ---
+13708 stat("/usr/lib/gcc/x86_64-linux-gnu/5/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13708 stat("/usr/lib/gcc/x86_64-linux-gnu/5/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13708 stat("/usr/lib/gcc/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13708 stat("/usr/lib/gcc/x86_64-linux-gnu/5/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13708 stat("/usr/lib/gcc/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13708 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/5/.", 0x7ffd1fb626a0) = -1 ENOENT (No such file or directory)
+13708 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/.", 0x7ffd1fb626a0) = -1 ENOENT (No such file or directory)
+13708 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/bin/.", 0x7ffd1fb626a0) = -1 ENOENT (No such file or directory)
+13708 stat("/usr/lib/gcc/x86_64-linux-gnu/5/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13708 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/5/.", 0x7ffd1fb626a0) = -1 ENOENT (No such file or directory)
+13708 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/.", 0x7ffd1fb626a0) = -1 ENOENT (No such file or directory)
+13708 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/../lib/.", 0x7ffd1fb626a0) = -1 ENOENT (No such file or directory)
+13708 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/5/.", 0x7ffd1fb626a0) = -1 ENOENT (No such file or directory)
+13708 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=73728, ...}) = 0
+13708 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13708 stat("/lib/x86_64-linux-gnu/5/.", 0x7ffd1fb626a0) = -1 ENOENT (No such file or directory)
+13708 stat("/lib/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+13708 stat("/lib/../lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13708 stat("/usr/lib/x86_64-linux-gnu/5/.", 0x7ffd1fb626a0) = -1 ENOENT (No such file or directory)
+13708 stat("/usr/lib/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=73728, ...}) = 0
+13708 stat("/usr/lib/../lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13708 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/.", 0x7ffd1fb626a0) = -1 ENOENT (No such file or directory)
+13708 stat("/usr/lib/gcc/x86_64-linux-gnu/5/../../../.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13708 stat("/lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13708 stat("/usr/lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+13708 exit_group(0)                     = ?
+13708 +++ exited with 0 +++

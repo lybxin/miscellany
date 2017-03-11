@@ -1,19 +1,45 @@
-cmd_/home/lybxin/MyRes/miscellany/test/05_modules/output/../src/helloprintf.o := gcc -Wp,-MD,/home/lybxin/MyRes/miscellany/test/05_modules/output/../src/.helloprintf.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/src/linux-headers-lbm- -I/home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include -Iarch/x86/include/generated/uapi -Iarch/x86/include/generated  -I/home/lybxin/MyRes/linux-source-4.4.0/include -Iinclude -I/home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I/home/lybxin/MyRes/linux-source-4.4.0/include/uapi -Iinclude/generated/uapi -include /home/lybxin/MyRes/linux-source-4.4.0/include/linux/kconfig.h -Iubuntu/include -I/home/lybxin/MyRes/linux-source-4.4.0/ubuntu/include   -I/home/lybxin/MyRes/miscellany/test/05_modules/output -D__KERNEL__ -fno-pie -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-pie -no-pie -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -fno-delete-null-pointer-checks -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -gdwarf-4 -pg -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -DCC_HAVE_ASM_GOTO  -I/home/lybxin/MyRes/linux-source-4.4.0/../src/include -I../src/include  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(helloprintf)"  -D"KBUILD_MODNAME=KBUILD_STR(hello)" -c -o /home/lybxin/MyRes/miscellany/test/05_modules/output/../src/.tmp_helloprintf.o /home/lybxin/MyRes/miscellany/test/05_modules/output/../src/helloprintf.c
+cmd_/home/lybxin/MyRes/miscellany/test/06_kdebug/output/../src/lp_cmdline.o := gcc -Wp,-MD,/home/lybxin/MyRes/miscellany/test/06_kdebug/output/../src/.lp_cmdline.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/src/linux-headers-lbm- -I/home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include -Iarch/x86/include/generated/uapi -Iarch/x86/include/generated  -I/home/lybxin/MyRes/linux-source-4.4.0/include -Iinclude -I/home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I/home/lybxin/MyRes/linux-source-4.4.0/include/uapi -Iinclude/generated/uapi -include /home/lybxin/MyRes/linux-source-4.4.0/include/linux/kconfig.h -Iubuntu/include -I/home/lybxin/MyRes/linux-source-4.4.0/ubuntu/include   -I/home/lybxin/MyRes/miscellany/test/06_kdebug/output -D__KERNEL__ -fno-pie -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-pie -no-pie -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -fno-delete-null-pointer-checks -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -g -gdwarf-4 -pg -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -DCC_HAVE_ASM_GOTO  -I/home/lybxin/MyRes/linux-source-4.4.0/../src/include -I../src/include  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(lp_cmdline)"  -D"KBUILD_MODNAME=KBUILD_STR(tcp_debug)" -c -o /home/lybxin/MyRes/miscellany/test/06_kdebug/output/../src/.tmp_lp_cmdline.o /home/lybxin/MyRes/miscellany/test/06_kdebug/output/../src/lp_cmdline.c
 
-source_/home/lybxin/MyRes/miscellany/test/05_modules/output/../src/helloprintf.o := /home/lybxin/MyRes/miscellany/test/05_modules/output/../src/helloprintf.c
+source_/home/lybxin/MyRes/miscellany/test/06_kdebug/output/../src/lp_cmdline.o := /home/lybxin/MyRes/miscellany/test/06_kdebug/output/../src/lp_cmdline.c
 
-deps_/home/lybxin/MyRes/miscellany/test/05_modules/output/../src/helloprintf.o := \
-  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/kernel.h \
-    $(wildcard include/config/lbdaf.h) \
-    $(wildcard include/config/preempt/voluntary.h) \
-    $(wildcard include/config/debug/atomic/sleep.h) \
-    $(wildcard include/config/mmu.h) \
-    $(wildcard include/config/prove/locking.h) \
-    $(wildcard include/config/panic/timeout.h) \
+deps_/home/lybxin/MyRes/miscellany/test/06_kdebug/output/../src/lp_cmdline.o := \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/module.h \
+    $(wildcard include/config/modules.h) \
+    $(wildcard include/config/sysfs.h) \
+    $(wildcard include/config/module/sig.h) \
+    $(wildcard include/config/modules/tree/lookup.h) \
+    $(wildcard include/config/unused/symbols.h) \
+    $(wildcard include/config/generic/bug.h) \
+    $(wildcard include/config/kallsyms.h) \
+    $(wildcard include/config/smp.h) \
+    $(wildcard include/config/tracepoints.h) \
     $(wildcard include/config/tracing.h) \
+    $(wildcard include/config/event/tracing.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
-  /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
-  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/linkage.h \
+    $(wildcard include/config/livepatch.h) \
+    $(wildcard include/config/module/unload.h) \
+    $(wildcard include/config/constructors.h) \
+    $(wildcard include/config/debug/set/module/ronx.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/list.h \
+    $(wildcard include/config/debug/list.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/types.h \
+    $(wildcard include/config/have/uid16.h) \
+    $(wildcard include/config/uid16.h) \
+    $(wildcard include/config/lbdaf.h) \
+    $(wildcard include/config/arch/dma/addr/t/64bit.h) \
+    $(wildcard include/config/phys/addr/t/64bit.h) \
+    $(wildcard include/config/64bit.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/types.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/uapi/asm/types.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/asm-generic/types.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/asm-generic/int-ll64.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/asm-generic/int-ll64.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/uapi/asm/bitsperlong.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/asm-generic/bitsperlong.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/asm-generic/bitsperlong.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/posix_types.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/stddef.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/stddef.h \
   /home/lybxin/MyRes/linux-source-4.4.0/include/linux/compiler.h \
     $(wildcard include/config/sparse/rcu/pointer.h) \
     $(wildcard include/config/trace/branch/profiling.h) \
@@ -27,41 +53,32 @@ deps_/home/lybxin/MyRes/miscellany/test/05_modules/output/../src/helloprintf.o :
     $(wildcard include/config/optimize/inlining.h) \
     $(wildcard include/config/gcov/kernel.h) \
     $(wildcard include/config/arch/use/builtin/bswap.h) \
-  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/types.h \
-  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/uapi/asm/types.h \
-  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/asm-generic/types.h \
-  /home/lybxin/MyRes/linux-source-4.4.0/include/asm-generic/int-ll64.h \
-  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/asm-generic/int-ll64.h \
-  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/uapi/asm/bitsperlong.h \
-  /home/lybxin/MyRes/linux-source-4.4.0/include/asm-generic/bitsperlong.h \
-    $(wildcard include/config/64bit.h) \
-  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/asm-generic/bitsperlong.h \
-  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/posix_types.h \
-  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/stddef.h \
-  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/stddef.h \
   /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/posix_types.h \
     $(wildcard include/config/x86/32.h) \
   /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/uapi/asm/posix_types_64.h \
   /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/asm-generic/posix_types.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/poison.h \
+    $(wildcard include/config/illegal/pointer/value.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/const.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/kernel.h \
+    $(wildcard include/config/preempt/voluntary.h) \
+    $(wildcard include/config/debug/atomic/sleep.h) \
+    $(wildcard include/config/mmu.h) \
+    $(wildcard include/config/prove/locking.h) \
+    $(wildcard include/config/panic/timeout.h) \
+  /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/linkage.h \
   /home/lybxin/MyRes/linux-source-4.4.0/include/linux/stringify.h \
   /home/lybxin/MyRes/linux-source-4.4.0/include/linux/export.h \
     $(wildcard include/config/have/underscore/symbol/prefix.h) \
-    $(wildcard include/config/modules.h) \
     $(wildcard include/config/modversions.h) \
-    $(wildcard include/config/unused/symbols.h) \
   /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/linkage.h \
     $(wildcard include/config/x86/64.h) \
     $(wildcard include/config/x86/alignment/16.h) \
-  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/types.h \
-    $(wildcard include/config/have/uid16.h) \
-    $(wildcard include/config/uid16.h) \
-    $(wildcard include/config/arch/dma/addr/t/64bit.h) \
-    $(wildcard include/config/phys/addr/t/64bit.h) \
   /home/lybxin/MyRes/linux-source-4.4.0/include/linux/bitops.h \
   /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/bitops.h \
     $(wildcard include/config/x86/cmov.h) \
   /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/alternative.h \
-    $(wildcard include/config/smp.h) \
     $(wildcard include/config/paravirt.h) \
   /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/asm.h \
   /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/ptrace.h \
@@ -69,7 +86,6 @@ deps_/home/lybxin/MyRes/miscellany/test/05_modules/output/../src/helloprintf.o :
   /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/segment.h \
     $(wildcard include/config/cc/stackprotector.h) \
     $(wildcard include/config/x86/32/lazy/gs.h) \
-  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/const.h \
   /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/cache.h \
     $(wildcard include/config/x86/l1/cache/shift.h) \
     $(wildcard include/config/x86/internode/cache/shift.h) \
@@ -155,22 +171,6 @@ deps_/home/lybxin/MyRes/miscellany/test/05_modules/output/../src/helloprintf.o :
   /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/kernel.h \
   /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/sysinfo.h \
   /home/lybxin/MyRes/linux-source-4.4.0/include/linux/dynamic_debug.h \
-  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/module.h \
-    $(wildcard include/config/sysfs.h) \
-    $(wildcard include/config/module/sig.h) \
-    $(wildcard include/config/modules/tree/lookup.h) \
-    $(wildcard include/config/generic/bug.h) \
-    $(wildcard include/config/kallsyms.h) \
-    $(wildcard include/config/tracepoints.h) \
-    $(wildcard include/config/event/tracing.h) \
-    $(wildcard include/config/livepatch.h) \
-    $(wildcard include/config/module/unload.h) \
-    $(wildcard include/config/constructors.h) \
-    $(wildcard include/config/debug/set/module/ronx.h) \
-  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/list.h \
-    $(wildcard include/config/debug/list.h) \
-  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/poison.h \
-    $(wildcard include/config/illegal/pointer/value.h) \
   /home/lybxin/MyRes/linux-source-4.4.0/include/linux/stat.h \
   /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/uapi/asm/stat.h \
   /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/stat.h \
@@ -595,7 +595,247 @@ deps_/home/lybxin/MyRes/miscellany/test/05_modules/output/../src/helloprintf.o :
     $(wildcard include/config/have/mod/arch/specific.h) \
     $(wildcard include/config/modules/use/elf/rel.h) \
     $(wildcard include/config/modules/use/elf/rela.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/livepatch.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/ftrace.h \
+    $(wildcard include/config/function/tracer.h) \
+    $(wildcard include/config/dynamic/ftrace/with/regs.h) \
+    $(wildcard include/config/dynamic/ftrace.h) \
+    $(wildcard include/config/stack/tracer.h) \
+    $(wildcard include/config/function/graph/tracer.h) \
+    $(wildcard include/config/frame/pointer.h) \
+    $(wildcard include/config/ftrace/syscalls.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/trace_clock.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/trace_clock.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/kallsyms.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/ptrace.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/sched.h \
+    $(wildcard include/config/sched/debug.h) \
+    $(wildcard include/config/lockup/detector.h) \
+    $(wildcard include/config/detect/hung/task.h) \
+    $(wildcard include/config/core/dump/default/elf/headers.h) \
+    $(wildcard include/config/virt/cpu/accounting/native.h) \
+    $(wildcard include/config/sched/autogroup.h) \
+    $(wildcard include/config/bsd/process/acct.h) \
+    $(wildcard include/config/taskstats.h) \
+    $(wildcard include/config/audit.h) \
+    $(wildcard include/config/inotify/user.h) \
+    $(wildcard include/config/fanotify.h) \
+    $(wildcard include/config/epoll.h) \
+    $(wildcard include/config/posix/mqueue.h) \
+    $(wildcard include/config/keys.h) \
+    $(wildcard include/config/perf/events.h) \
+    $(wildcard include/config/bpf/syscall.h) \
+    $(wildcard include/config/sched/info.h) \
+    $(wildcard include/config/task/delay/acct.h) \
+    $(wildcard include/config/schedstats.h) \
+    $(wildcard include/config/sched/mc.h) \
+    $(wildcard include/config/fair/group/sched.h) \
+    $(wildcard include/config/rt/group/sched.h) \
+    $(wildcard include/config/cgroup/sched.h) \
+    $(wildcard include/config/blk/dev/io/trace.h) \
+    $(wildcard include/config/memcg/kmem.h) \
+    $(wildcard include/config/compat/brk.h) \
+    $(wildcard include/config/virt/cpu/accounting/gen.h) \
+    $(wildcard include/config/sysvipc.h) \
+    $(wildcard include/config/auditsyscall.h) \
+    $(wildcard include/config/rt/mutexes.h) \
+    $(wildcard include/config/block.h) \
+    $(wildcard include/config/task/xacct.h) \
+    $(wildcard include/config/cpusets.h) \
+    $(wildcard include/config/cgroups.h) \
+    $(wildcard include/config/futex.h) \
+    $(wildcard include/config/arch/want/batched/unmap/tlb/flush.h) \
+    $(wildcard include/config/fault/injection.h) \
+    $(wildcard include/config/latencytop.h) \
+    $(wildcard include/config/bcache.h) \
+    $(wildcard include/config/arch/wants/dynamic/task/struct.h) \
+    $(wildcard include/config/have/unstable/sched/clock.h) \
+    $(wildcard include/config/irq/time/accounting.h) \
+    $(wildcard include/config/stack/growsup.h) \
+    $(wildcard include/config/have/copy/thread/tls.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/sched.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/sched/prio.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/capability.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/capability.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/plist.h \
+    $(wildcard include/config/debug/pi/list.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/cputime.h \
+  arch/x86/include/generated/asm/cputime.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/asm-generic/cputime.h \
+    $(wildcard include/config/virt/cpu/accounting.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/asm-generic/cputime_jiffies.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/sem.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/sem.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/ipc.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/ipc.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/uapi/asm/ipcbuf.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/asm-generic/ipcbuf.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/uapi/asm/sembuf.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/shm.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/shm.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/uapi/asm/shmbuf.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/asm-generic/shmbuf.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/shmparam.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/signal.h \
+    $(wildcard include/config/old/sigaction.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/signal.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/signal.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/uapi/asm/signal.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/asm-generic/signal-defs.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/uapi/asm/siginfo.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/asm-generic/siginfo.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/asm-generic/siginfo.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/pid.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/proportions.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/percpu_counter.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/seccomp.h \
+    $(wildcard include/config/seccomp.h) \
+    $(wildcard include/config/have/arch/seccomp/filter.h) \
+    $(wildcard include/config/seccomp/filter.h) \
+    $(wildcard include/config/checkpoint/restore.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/seccomp.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/seccomp.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/unistd.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/uapi/asm/unistd.h \
+  arch/x86/include/generated/uapi/asm/unistd_64.h \
+  arch/x86/include/generated/asm/unistd_64_x32.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/ia32_unistd.h \
+  arch/x86/include/generated/asm/unistd_32_ia32.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/asm-generic/seccomp.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/unistd.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/rculist.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/rtmutex.h \
+    $(wildcard include/config/debug/rt/mutexes.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/resource.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/resource.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/uapi/asm/resource.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/asm-generic/resource.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/asm-generic/resource.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/hrtimer.h \
+    $(wildcard include/config/high/res/timers.h) \
+    $(wildcard include/config/time/low/res.h) \
+    $(wildcard include/config/timerfd.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/timerqueue.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/task_io_accounting.h \
+    $(wildcard include/config/task/io/accounting.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/latencytop.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/cred.h \
+    $(wildcard include/config/debug/credentials.h) \
+    $(wildcard include/config/security.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/key.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/assoc_array.h \
+    $(wildcard include/config/associative/array.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/selinux.h \
+    $(wildcard include/config/security/selinux.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/magic.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/cgroup-defs.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/limits.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/percpu-refcount.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/percpu-rwsem.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/rcu_sync.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/cgroup_subsys.h \
+    $(wildcard include/config/cgroup/cpuacct.h) \
+    $(wildcard include/config/blk/cgroup.h) \
+    $(wildcard include/config/cgroup/device.h) \
+    $(wildcard include/config/cgroup/freezer.h) \
+    $(wildcard include/config/cgroup/net/classid.h) \
+    $(wildcard include/config/cgroup/perf.h) \
+    $(wildcard include/config/cgroup/net/prio.h) \
+    $(wildcard include/config/cgroup/hugetlb.h) \
+    $(wildcard include/config/cgroup/pids.h) \
+    $(wildcard include/config/cgroup/debug.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/pid_namespace.h \
+    $(wildcard include/config/pid/ns.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/mm.h \
+    $(wildcard include/config/ppc.h) \
+    $(wildcard include/config/parisc.h) \
+    $(wildcard include/config/metag.h) \
+    $(wildcard include/config/shmem.h) \
+    $(wildcard include/config/debug/vm/rb.h) \
+    $(wildcard include/config/debug/pagealloc.h) \
+    $(wildcard include/config/hugetlbfs.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/debug_locks.h \
+    $(wildcard include/config/debug/locking/api/selftests.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/bit_spinlock.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/shrinker.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/page_ext.h \
+    $(wildcard include/config/idle/page/tracking.h) \
+    $(wildcard include/config/page/owner.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/stacktrace.h \
+    $(wildcard include/config/stacktrace.h) \
+    $(wildcard include/config/user/stacktrace/support.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/pgtable.h \
+    $(wildcard include/config/debug/wx.h) \
+    $(wildcard include/config/have/arch/soft/dirty.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/pgtable_64.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/asm-generic/pgtable.h \
+    $(wildcard include/config/have/arch/huge/vmap.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/page-flags.h \
+    $(wildcard include/config/arch/uses/pg/uncached.h) \
+    $(wildcard include/config/memory/failure.h) \
+    $(wildcard include/config/swap.h) \
+    $(wildcard include/config/ksm.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/huge_mm.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/vmstat.h \
+    $(wildcard include/config/vm/event/counters.h) \
+    $(wildcard include/config/debug/tlbflush.h) \
+    $(wildcard include/config/debug/vm/vmacache.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/vm_event_item.h \
+    $(wildcard include/config/migration.h) \
+    $(wildcard include/config/memory/balloon.h) \
+    $(wildcard include/config/balloon/compaction.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/nsproxy.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/ns_common.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/ptrace.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/fs.h \
+    $(wildcard include/config/fs/posix/acl.h) \
+    $(wildcard include/config/cgroup/writeback.h) \
+    $(wildcard include/config/ima.h) \
+    $(wildcard include/config/fsnotify.h) \
+    $(wildcard include/config/file/locking.h) \
+    $(wildcard include/config/quota.h) \
+    $(wildcard include/config/blk/dev/loop.h) \
+    $(wildcard include/config/fs/dax.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/kdev_t.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/kdev_t.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/dcache.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/rculist_bl.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/list_bl.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/lockref.h \
+    $(wildcard include/config/arch/use/cmpxchg/lockref.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/path.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/list_lru.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/radix-tree.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/semaphore.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/fiemap.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/migrate_mode.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/blk_types.h \
+    $(wildcard include/config/blk/dev/integrity.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/fs.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/quota.h \
+    $(wildcard include/config/quota/netlink/interface.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/dqblk_xfs.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/dqblk_v1.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/dqblk_v2.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/dqblk_qtree.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/projid.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/quota.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/nfs_fs_i.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/fcntl.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/linux/fcntl.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/uapi/asm/fcntl.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/uapi/asm-generic/fcntl.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/ftrace.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/compat.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/user32.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/livepatch.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/setup.h \
+    $(wildcard include/config/x86/intel/ce.h) \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/uapi/asm/setup.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/arch/x86/include/asm/espfix.h \
+  /home/lybxin/MyRes/miscellany/test/06_kdebug/output/../src/include/kobject.h \
+  /home/lybxin/MyRes/linux-source-4.4.0/include/linux/seq_file.h \
 
-/home/lybxin/MyRes/miscellany/test/05_modules/output/../src/helloprintf.o: $(deps_/home/lybxin/MyRes/miscellany/test/05_modules/output/../src/helloprintf.o)
+/home/lybxin/MyRes/miscellany/test/06_kdebug/output/../src/lp_cmdline.o: $(deps_/home/lybxin/MyRes/miscellany/test/06_kdebug/output/../src/lp_cmdline.o)
 
-$(deps_/home/lybxin/MyRes/miscellany/test/05_modules/output/../src/helloprintf.o):
+$(deps_/home/lybxin/MyRes/miscellany/test/06_kdebug/output/../src/lp_cmdline.o):
