@@ -1,0 +1,11 @@
+digraph structs {
+/* 把节点的默认形状设为矩形record，默认的是圆角矩形Mrecord */
+node [shape = record];
+
+struct1 [fillcolor=yellow fontcolor=blue label = "<fabc0>[test01]left|middle test|right"];
+struct2 [label = "one|two"];
+struct3 [label = "hello\nworld|{b|{c|d|e}|f}|g|h"];
+
+struct1 -> struct2;
+struct1 -> struct3;
+}
