@@ -1,0 +1,70 @@
+digraph mtd_info{  
+    node [shape=record, fontsize=12, style=filled];  
+    edge[color=blue];  
+    rankdir=LR;
+    compound=true;
+    margin=15; 
+    #penwidth=1;   
+  
+    subgraph cluster_task_struct{  
+        node[shape=record style=filled];  
+        color=cyan;  
+        style=filled;  
+        label = "task_struct[def]";  
+        edge[color="#2e3436"];  
+        task_struct[shape=record,label="\  
+                  <cgroups>cgroups[css_set*]\  
+                  |<cg_list>cg_list[list_head]\    
+                  "];  
+    }  
+    
+    subgraph cluster_css_set{  
+        node[shape=record style=filled];  
+        color=cyan; 
+        
+        style=filled;
+        label = "css_set[def]";  
+        edge[color="#2e3436"];  
+        css_set[shape=record,label="\  
+                  <hlist>hlist[hlist_node]\
+                  |<tasks>tasks[list_head]\  
+                  |<mg_tasks>mg_tasks[list_head]\  
+                  |<cgrp_links>cgrp_links[list_head]\  
+                  "];  
+    }
+    
+    subgraph cluster_cgrp_cset_link{  
+        node[shape=record style=filled];  
+        color=cyan;  
+        style=filled;  
+        label = "cgrp_cset_link[def]";  
+        edge[color="#2e3436"];  
+        cgrp_cset_link[shape=record,label="\  
+                  <cgrp>cgrp[cgroup*]\
+                  |<cset>cset[cset*]\  
+                  |<cset_link>cset_link[list_head]\  
+                  |<cgrp_link>cgrp_link[list_head]\  
+                  "];  
+    }
+    
+    subgraph cluster_cgroup{  
+        node[shape=record style=filled];  
+        color=cyan;  
+        style=filled;  
+        label = "cgroup[def]";  
+        edge[color="#2e3436"];  
+        cgroup[shape=record,label="\  
+                  <root>root[cgroup_root*]\ 
+                  |<cset_links>cset_links[list_head]\   
+                  "];  
+    }
+    
+    task_struct:cgroups->css_set[lhead=cluster_css_set;headport=n]
+    css_set:tasks->task_struct:cg_list
+    css_set:mg_tasks->task_struct:cg_list
+    css_set:cgrp_links->cgrp_cset_link:cgrp_link
+    cgrp_cset_link:cset->css_set[lhead=cluster_css_set;headport=n]
+    cgroup:cset_links->cgrp_cset_link:cset_link
+    cgrp_cset_link:cgroup->cgroup[lhead=cluster_cgroup;headport=n]
+    
+} 

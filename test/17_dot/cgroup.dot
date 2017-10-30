@@ -1,0 +1,11 @@
+digraph structs {
+    node [shape=plaintext]
+    task_struct [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+  <TR><TD BGCOLOR="gray">task_struct[def]</TD></TR>
+  <TR><TD>cgroups[css_set*]</TD></TR>
+  <TR><TD>cg_list[list_head]</TD></TR>
+</TABLE>>];
+
+
+}
