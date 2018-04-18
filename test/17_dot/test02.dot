@@ -1,0 +1,37 @@
+digraph G {
+
+rankdir=LR; /* graph from left to right */
+fontname=ubuntu; /* ubuntu is our standard font */
+labeljust=l; /* cluster labels aligned left */
+splines=ortho; /* arrows are straight and w 90 deg angles */
+penwidth=2; /* for cluster borders */
+color=gray; /* for cluster borders */
+
+/* default node config: */
+node [shape=box fontsize=14 width=1.5 height=1 fixedsize=true ]
+
+subgraph cluster0
+{
+
+{
+rank = same; /* rank=same aligns both elements */
+a;
+aout
+}
+subgraph cluster3{
+margin=8
+style=dashed
+color=grey
+choice [height=2.2 width=1]
+b
+c
+}
+d
+aout -> a
+a -> choice
+choice -> {b c}
+{b c} -> d
+d -> aout [tailport=s headport=e color=blue constraint=false] /* arrow leaves south of block, reaches east of another block, same as saying: d:s -> aout:e */
+
+}
+}

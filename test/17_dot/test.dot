@@ -1,4 +1,5 @@
 digraph structs {
+# rankdir=LR;
 /* 把节点的默认形状设为矩形record，默认的是圆角矩形Mrecord */
 node [shape = record];
 

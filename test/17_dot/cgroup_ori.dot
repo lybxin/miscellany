@@ -3,8 +3,18 @@ digraph mtd_info{
     edge[color=blue];  
     rankdir=LR;
     compound=true;
-    margin=15; 
-    #penwidth=1;   
+    margin=12; 
+    #penwidth=1; 
+    
+    subgraph cluster_global_variable{  
+        node[shape=record style=filled];  
+        color=dimgray;  
+        style=filled;  
+        label = "global_variable";  
+        edge[color="#2e3436"];  
+        css_set_table[shape=record,label="css_set_table[]\<hlist_head\>"];
+        cgroup_subsys[shape=record,label="cgroup_subsys[]\<cgroup_subsys*\>"];
+    }   
   
     subgraph cluster_task_struct{  
         node[shape=record style=filled];  
@@ -13,23 +23,22 @@ digraph mtd_info{
         label = "task_struct[def]";  
         edge[color="#2e3436"];  
         task_struct[shape=record,label="\  
-                  <cgroups>cgroups[css_set*]\  
-                  |<cg_list>cg_list[list_head]\    
+                  <cgroups>cgroups\<css_set*\>\  
+                  |<cg_list>cg_list\<list_head\>\    
                   "];  
     }  
     
     subgraph cluster_css_set{  
         node[shape=record style=filled];  
         color=cyan; 
-        
         style=filled;
         label = "css_set[def]";  
         edge[color="#2e3436"];  
         css_set[shape=record,label="\  
-                  <hlist>hlist[hlist_node]\
-                  |<tasks>tasks[list_head]\  
-                  |<mg_tasks>mg_tasks[list_head]\  
-                  |<cgrp_links>cgrp_links[list_head]\  
+                  <hlist>hlist\<hlist_node\>\
+                  |<tasks>tasks\<list_head\>\  
+                  |<mg_tasks>mg_tasks\<list_head\>\  
+                  |<cgrp_links>cgrp_links\<list_head\>\  
                   "];  
     }
     
@@ -40,10 +49,10 @@ digraph mtd_info{
         label = "cgrp_cset_link[def]";  
         edge[color="#2e3436"];  
         cgrp_cset_link[shape=record,label="\  
-                  <cgrp>cgrp[cgroup*]\
-                  |<cset>cset[cset*]\  
-                  |<cset_link>cset_link[list_head]\  
-                  |<cgrp_link>cgrp_link[list_head]\  
+                  <cgrp>cgrp\<cgroup*\>\
+                  |<cset>cset\<css_set*\>\  
+                  |<cset_link>cset_link\<list_head\>\  
+                  |<cgrp_link>cgrp_link\<list_head\>\  
                   "];  
     }
     
@@ -54,8 +63,24 @@ digraph mtd_info{
         label = "cgroup[def]";  
         edge[color="#2e3436"];  
         cgroup[shape=record,label="\  
-                  <root>root[cgroup_root*]\ 
-                  |<cset_links>cset_links[list_head]\   
+                  <root>root\<cgroup_root*\>\ 
+                  |<cset_links>cset_links\<list_head\>\
+                  |<subsys>subsys[]\<cgroup_subsys_state*\>\ 
+                  "];  
+    }
+    
+    subgraph cluster_cgroup_subsys_state{  
+        node[shape=record style=filled];  
+        color=cyan;  
+        style=filled;  
+        label = "cgroup_subsys_state[def]";  
+        edge[color="#2e3436"];  
+        cgroup_subsys_state[shape=record,label="\  
+                  <cgroup>cgroup\<cgroup*\>\ 
+                  |<ss>ss\<cgroup_subsys*\>\
+                  |<parent>parent\<cgroup_subsys_state*\>\ 
+                  |<sibling>sibling\<list_head\>\ 
+                  |<children>children\<list_head\>\
                   "];  
     }
     
@@ -65,6 +90,12 @@ digraph mtd_info{
     css_set:cgrp_links->cgrp_cset_link:cgrp_link
     cgrp_cset_link:cset->css_set[lhead=cluster_css_set;headport=n]
     cgroup:cset_links->cgrp_cset_link:cset_link
-    cgrp_cset_link:cgroup->cgroup[lhead=cluster_cgroup;headport=n]
+    cgrp_cset_link:cgrp->cgroup[lhead=cluster_cgroup;headport=n]
+    css_set_table->css_set:hlist
+    cgroup:subsys->cgroup_subsys_state[lhead=cluster_cgroup_subsys_state;headport=n]
+    cgroup_subsys_state:cgroup->cgroup[lhead=cluster_cgroup;headport=n]
+    cgroup_subsys->cgroup_subsys_state:ss[taillabel="    [i]中文测试";dir=back]
+    cgroup_subsys_state:children:e->cgroup_subsys_state:sibling:e
+    #cgroup_subsys_state:parent:e->cgroup_subsys_state:e[lhead=cluster_cgroup_subsys_state;]
     
 } 
