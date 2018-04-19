@@ -1,0 +1,55 @@
+digraph mtd_info{  
+    node [shape=record, fontsize=12, style=filled];  
+    edge[color=blue];  
+    rankdir=LR;
+    compound=true;
+    margin=12; 
+    #penwidth=1; 
+    
+    subgraph cluster_TC_Config{  
+        node[shape=record style=filled];  
+        color=dimgray;  
+        style=filled;  
+        label = "TC_Config";  
+        edge[color="#2e3436"];  
+        _root[shape=record,label="_root\ \ \ \ \ :TC_ConfigDomain"];
+    }   
+  
+    subgraph cluster_TC_ConfigDomain{  
+        node[shape=record style=filled];  
+        color=cyan;  
+        style=filled;
+        labeljust=l;  
+        label = "TC_ConfigDomain[def]";  
+        edge[color="#2e3436"]; 
+        
+        subgraph cluster_DomainPath{  
+            node[shape=record style=filled];  
+            color=dimgray;  
+            style=filled;  
+            label = "DomainPath[def]";  
+            edge[color="#2e3436"];  
+            DomainPath[shape=record,label="\  
+                  <_domains>_domains\<vector\<string\>\>\  
+                  |<_param>_param\<string\>\    
+                  "];  
+        }   
+
+        TC_ConfigDomain[shape=record,labeljust=l,label="\  
+                  <_name>_name\<string\>\l_dom\l \  
+                  |<_param>_param\<map\<string, string\>\>\l \
+                  |<_key>_key\<map\<string, string\>\>\  
+                  |<_param>_param\<vector\<string\>\>\
+                  |<_subdomain>_subdomain\<map\<string, TC_ConfigDomain*\>\>\
+                  |<_domain>_domain\<vector\<string\>\>\ 
+                  |<_line>_line\<vector\<string\>\>\    
+                  "];  
+        
+    
+    }  
+    
+
+    _root->TC_ConfigDomain[lhead=cluster_TC_ConfigDomain;headport=n]
+
+    
+} 

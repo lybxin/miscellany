@@ -1,0 +1,84 @@
+digraph mtd_info{  
+    node [shape=record, fontsize=12, style=filled];  
+    edge[color=blue];  
+    rankdir=LR;
+    compound=true;
+    margin=12; 
+    #penwidth=1; 
+    
+    subgraph cluster_TC_Option{  
+        node[shape=record style=filled];  
+        color=dimgray;  
+        style=filled;  
+        label = "TC_Option[def]";  
+        edge[color="#2e3436"];  
+        TC_Option[shape=record,label="\  
+                  <_mParam>_mParam  :map\<string, string\>\l|\  
+                  <_vSingle>_vSingle  :vector\<string\>\l"];
+    }
+    
+    subgraph cluster_Application{  
+        node[shape=record style=filled];  
+        color=dimgray;  
+        style=filled;  
+        label = "Application[def]";  
+        edge[color="#2e3436"];  
+        Application[shape=record,label="<_conf>_conf\ \ :TC_Config"];
+    }
+    
+    subgraph cluster_ServerConfig{  
+        node[shape=record style=filled];  
+        color=dimgray;  
+        style=filled;  
+        label = "ServerConfig[def]";  
+        edge[color="#2e3436"];  
+        ServerConfig[shape=record,label="ConfigFile\ \ :static string"];
+    }
+    
+    subgraph cluster_TC_Config{  
+        node[shape=record style=filled];  
+        color=dimgray;  
+        style=filled;  
+        label = "TC_Config[def]";  
+        edge[color="#2e3436"];  
+        TC_Config[shape=record,label="<_root>_root\ \ :TC_ConfigDomain"];
+    }
+  
+    subgraph cluster_TC_ConfigDomain{  
+        node[shape=record style=filled];  
+        color=cyan;  
+        style=filled;
+        labeljust=l;  
+        label = "TC_ConfigDomain[def]";  
+        edge[color="#2e3436"]; 
+        
+        subgraph cluster_DomainPath{  
+            node[shape=record style=filled];  
+            color=dimgray;  
+            style=filled;  
+            label = "DomainPath[def]";  
+            edge[color="#2e3436"];  
+            DomainPath[shape=record,label="\  
+                  <_domains>_domains  :vector\<string\>\l|\  
+                  <_param>_param  :string\l"];  
+        }   
+
+        TC_ConfigDomain[shape=record,label="\  
+                  <_name>_name  :string\l|\  
+                  <_param>_param  :map\<string, string\>\l|\
+                  <_key>_key  :map\<string, string\>\l|\  
+                  <_param>_param  :vector\<string\>\l|\
+                  <_subdomain>_subdomain  :map\<string, TC_ConfigDomain*\>\l|\
+                  <_domain>_domain  :vector\<string\>\l|\ 
+                  <_line>_line  :vector\<string\>\l"];  
+        
+    
+    }  
+    
+
+    TC_Config:_root->TC_ConfigDomain[lhead=cluster_TC_ConfigDomain;headport=n]
+    ServerConfig->TC_Option[lhead=cluster_TC_Option;style=dotted]
+    Application:_conf->TC_Config[lhead=cluster_TC_Config;]
+
+    
+} 
