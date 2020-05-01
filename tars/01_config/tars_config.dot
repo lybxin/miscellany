@@ -67,7 +67,6 @@ digraph mtd_info{
                   <_name>_name  :string\l|\  
                   <_param>_param  :map\<string, string\>\l|\
                   <_key>_key  :map\<string, string\>\l|\  
-                  <_param>_param  :vector\<string\>\l|\
                   <_subdomain>_subdomain  :map\<string, TC_ConfigDomain*\>\l|\
                   <_domain>_domain  :vector\<string\>\l|\ 
                   <_line>_line  :vector\<string\>\l"];  

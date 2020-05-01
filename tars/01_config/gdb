@@ -1,0 +1,180 @@
+(gdb) p {TC_ConfigDomain} 0x7431d0
+$6 = {_name = "tars", _param = std::map with 0 elements, _key = std::vector of length 0, capacity 0, _subdomain = std::map with 2 elements = {
+    ["allow"] = 0x744470, ["application"] = 0x7432d0}, _domain = std::vector of length 2, capacity 2 = {"application", "allow"}, 
+  _line = std::vector of length 0, capacity 0}
+(gdb) p {TC_ConfigDomain} 0x7431d0._subdomain
+A syntax error in expression, near `_subdomain'.
+(gdb) p (TC_ConfigDomain*)0x7431d0->_subdomain
+Attempt to extract a component of a value that is not a structure pointer.
+(gdb) p {TC_ConfigDomain} 0x7432d0
+$7 = {_name = "application", _param = std::map with 0 elements, _key = std::vector of length 0, capacity 0, _subdomain = std::map with 2 elements = {
+    ["client"] = 0x7436e0, ["server"] = 0x743a90}, _domain = std::vector of length 2, capacity 2 = {"client", "server"}, 
+  _line = std::vector of length 0, capacity 0}
+(gdb) p {TC_ConfigDomain} 0x743a90
+$8 = {_name = "server", _param = std::map with 4 elements = {["app"] = "apptest", ["localip"] = "127.0.0.1", ["logLevel"] = "DEBUG", 
+    ["server"] = "httpserver"}, _key = std::vector of length 4, capacity 4 = {"app", "server", "localip", "logLevel"}, 
+  _subdomain = std::map with 1 elements = {["ServerAdapter"] = 0x743f60}, _domain = std::vector of length 1, capacity 1 = {"ServerAdapter"}, 
+  _line = std::vector of length 4, capacity 4 = {"app=apptest", "server=httpserver", "localip=127.0.0.1", "logLevel=DEBUG"}}
+(gdb) p {TC_ConfigDomain} 0x743f60
+$9 = {_name = "ServerAdapter", _param = std::map with 4 elements = {["allow"] = "", ["endpoint"] = "tcp -h 127.0.0.1 -p 19586 -t 60000", 
+    ["servant"] = "apptest.httpserver.HttpObj", ["threads"] = "5"}, _key = std::vector of length 4, capacity 4 = {"endpoint", "allow", "threads", 
+    "servant"}, _subdomain = std::map with 0 elements, _domain = std::vector of length 0, capacity 0, _line = std::vector of length 4, capacity 4 = {
+    "endpoint=tcp -h 127.0.0.1 -p 19586 -t 60000", "allow", "threads=5", "servant=apptest.httpserver.HttpObj"}}
+(gdb) p _conf
+$10 = {_root = {_name = "", _param = std::map with 0 elements, _key = std::vector of length 0, capacity 0, _subdomain = std::map with 1 elements = {
+      ["tars"] = 0x7431d0}, _domain = std::vector of length 1, capacity 1 = {"tars"}, _line = std::vector of length 0, capacity 0}}
+(gdb) p {TC_ConfigDomain} 0x7431d0
+$11 = {_name = "tars", _param = std::map with 0 elements, _key = std::vector of length 0, capacity 0, _subdomain = std::map with 2 elements = {
+    ["allow"] = 0x744470, ["application"] = 0x7432d0}, _domain = std::vector of length 2, capacity 2 = {"application", "allow"}, 
+  _line = std::vector of length 0, capacity 0}
+(gdb) p {TC_ConfigDomain} 0x7432d0
+$12 = {_name = "application", _param = std::map with 0 elements, _key = std::vector of length 0, capacity 0, 
+  _subdomain = std::map with 2 elements = {["client"] = 0x7436e0, ["server"] = 0x743a90}, _domain = std::vector of length 2, capacity 2 = {"client", 
+    "server"}, _line = std::vector of length 0, capacity 0}
+(gdb) p {TC_ConfigDomain} 0x7436e0
+$13 = {_name = "client", _param = std::map with 1 elements = {["locator"] = "tars.tarsregistry.QueryObj@tcp -h registry.tars.com -p 17890"}, 
+  _key = std::vector of length 1, capacity 1 = {"locator"}, _subdomain = std::map with 0 elements, _domain = std::vector of length 0, capacity 0, 
+  _line = std::vector of length 1, capacity 1 = {"locator=tars.tarsregistry.QueryObj@tcp -h registry.tars.com -p 17890"}}
+(gdb) 
+
+
+
+
+
+
+
+
+
+(gdb) r -o-t -y -B --name=value --config=stest.conf
+
+
+
+
+
+
+
+
+(gdb) pvector _vSingle
+elem[0]: $12 = {
+  static npos = <optimized out>, 
+  _M_dataplus = {
+    <std::allocator<char>> = {
+      <__gnu_cxx::new_allocator<char>> = {<No data fields>}, <No data fields>}, 
+    members of std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider: 
+    _M_p = 0x740f10 "-o-t"
+  }, 
+  _M_string_length = 4, 
+  {
+    _M_local_buf = "-o-t", '\000' <repeats 11 times>, 
+    _M_allocated_capacity = 1949134637
+  }
+}
+elem[1]: $13 = {
+  static npos = <optimized out>, 
+  _M_dataplus = {
+    <std::allocator<char>> = {
+      <__gnu_cxx::new_allocator<char>> = {<No data fields>}, <No data fields>}, 
+    members of std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider: 
+    _M_p = 0x740f30 "-y"
+  }, 
+  _M_string_length = 2, 
+  {
+    _M_local_buf = "-y", '\000' <repeats 13 times>, 
+    _M_allocated_capacity = 31021
+  }
+}
+elem[2]: $14 = {
+  static npos = <optimized out>, 
+  _M_dataplus = {
+    <std::allocator<char>> = {
+      <__gnu_cxx::new_allocator<char>> = {<No data fields>}, <No data fields>}, 
+    members of std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider: 
+    _M_p = 0x740f50 "-B"
+  }, 
+  _M_string_length = 2, 
+  {
+    _M_local_buf = "-B", '\000' <repeats 13 times>, 
+    _M_allocated_capacity = 16941
+  }
+}
+---Type <return> to continue, or q <return> to quit---
+Vector size = 3
+Vector capacity = 4
+Element type = std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::pointer
+(gdb) pmap _mParam
+Map type = std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >
+Use pmap <variable_name> <left_element_type> <right_element_type> to see the elements in the map.
+Map size = 1
+(gdb) pmap _mParam string string
+elem[0].left: $15 = {
+  static npos = <optimized out>, 
+  _M_dataplus = {
+    <std::allocator<char>> = {
+      <__gnu_cxx::new_allocator<char>> = {<No data fields>}, <No data fields>}, 
+    members of std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider: 
+    _M_p = 0x741110 "name"
+  }, 
+  _M_string_length = 4, 
+  {
+    _M_local_buf = "name", '\000' <repeats 11 times>, 
+    _M_allocated_capacity = 1701667182
+  }
+}
+elem[0].right: $16 = {
+  static npos = <optimized out>, 
+  _M_dataplus = {
+    <std::allocator<char>> = {
+      <__gnu_cxx::new_allocator<char>> = {<No data fields>}, <No data fields>}, 
+    members of std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider: 
+    _M_p = 0x741130 "value"
+  }, 
+  _M_string_length = 5, 
+  {
+    _M_local_buf = "value\000\000\000\000\000\000\000\000\000\000", 
+    _M_allocated_capacity = 435761734006
+  }
+}
+Map size = 1
+
+
+
+
+
+
+$5 = {
+  _name = "tars", 
+  _param = std::map with 3 elements = {
+    ["ptest0"] = "",
+    ["ptest01"] = "pvalue03",
+    ["ptest02"] = "pvalue02"
+  }, 
+  _key = std::vector of length 3, capacity 4 = {"ptest02", "ptest01", "ptest0"}, 
+  _subdomain = std::map with 3 elements = {
+    ["allow"] = 0x744ac0,
+    ["application"] = 0x743b60,
+    ["test"] = 0x743a60
+  }, 
+  _domain = std::vector of length 3, capacity 4 = {"test", "application", "allow"}, 
+  _line = std::vector of length 5, capacity 8 = {"ptest0", "ptest01=pvalue01", "ptest02=pvalue02", "ptest01=pvalue03", "ptest0"}
+}
+
+
+
+
+$2 = {_name = "tars", _param = std::map with 3 elements = {["ptest0"] = "", ["ptest01"] = "pvalue03", ["ptest02"] = "pvalue02"}, 
+  _key = std::vector of length 3, capacity 4 = {"ptest02", "ptest01", "ptest0"}, _subdomain = std::map with 3 elements = {["allow"] = 0x744ac0, 
+    ["application"] = 0x743b60, ["test"] = 0x743a60}, _domain = std::vector of length 3, capacity 4 = {"test", "application", "allow"}, 
+  _line = std::vector of length 5, capacity 8 = {"ptest0", "ptest01=pvalue01", "ptest02=pvalue02", "ptest01=pvalue03", "ptest0"}}
+
+
+
+
+
+$4 = {_name = "test", _param = std::map with 2 elements = {
+    ["name01"] = "value01", ["name02"] = "value02"}, 
+  _key = std::vector of length 2, capacity 2 = {"name01", "name02"}, 
+  _subdomain = std::map with 0 elements, 
+  _domain = std::vector of length 0, capacity 0, 
+  _line = std::vector of length 2, capacity 2 = {"name01=value01", 
+    "name02=value02"}}
+
